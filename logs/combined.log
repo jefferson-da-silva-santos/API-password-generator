@@ -1,0 +1,105 @@
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-13T03:20:14.725Z"}
+{"level":"info","message":"Usuário encontrado: jefferson","timestamp":"2024-08-13T03:20:32.243Z"}
+{"level":"info","message":"Login bem-sucedido para o usuário: jefferson","timestamp":"2024-08-13T03:20:32.343Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [13/Aug/2024:03:20:32 +0000] \"POST /auth/login HTTP/1.1\" 200 171 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2024-08-13T03:20:32.347Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:35:11.459Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:35:14.445Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:36:07.496Z"}
+{"level":"info","message":"Usuário encontrado: jefferson","timestamp":"2024-08-14T07:36:14.154Z"}
+{"level":"info","message":"Login bem-sucedido para o usuário: jefferson","timestamp":"2024-08-14T07:36:14.237Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Aug/2024:07:36:14 +0000] \"POST /auth/login HTTP/1.1\" 200 171 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2024-08-14T07:36:14.240Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jefferson","timestamp":"2024-08-14T07:36:38.066Z"}
+{"level":"info","message":"Senha criada: mhtakscdmqffgrirepamvducoxfqvrnibyxreujvqwjjijfwih","timestamp":"2024-08-14T07:36:38.075Z"}
+{"level":"info","message":"Validando senha gerada: mhtakscdmqffgrirepamvducoxfqvrnibyxreujvqwjjijfwih","timestamp":"2024-08-14T07:36:38.075Z"}
+{"level":"info","message":"Senha criada: phcgbqlxajjnrxpyvfywewrapisddrmqconinlhahsbbtnabuh","timestamp":"2024-08-14T07:36:38.083Z"}
+{"level":"info","message":"Validando senha gerada: phcgbqlxajjnrxpyvfywewrapisddrmqconinlhahsbbtnabuh","timestamp":"2024-08-14T07:36:38.090Z"}
+{"level":"info","message":"Senha criada: 46807735342866480186240388556416156823233578515020","timestamp":"2024-08-14T07:36:38.091Z"}
+{"level":"info","message":"Validando senha gerada: 46807735342866480186240388556416156823233578515020","timestamp":"2024-08-14T07:36:38.092Z"}
+{"level":"info","message":"Gerando senha do tipo: maiusculas","timestamp":"2024-08-14T07:36:38.093Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-08-14T07:36:38.367Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-08-14T07:36:38.368Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-08-14T07:36:38.491Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: mhtakscdmqffgrirepamvducoxfqvrnibyxreujvqwjjijfwih","timestamp":"2024-08-14T07:36:38.491Z"}
+{"level":"info","message":"Senha com letras minúsculas criada com sucesso.","timestamp":"2024-08-14T07:36:38.491Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-08-14T07:36:38.500Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-08-14T07:36:38.500Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-08-14T07:36:38.509Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: phcgbqlxajjnrxpyvfywewrapisddrmqconinlhahsbbtnabuh","timestamp":"2024-08-14T07:36:38.510Z"}
+{"level":"info","message":"Senha com letras maiúsculas criada com sucesso.","timestamp":"2024-08-14T07:36:38.510Z"}
+{"level":"info","message":"Senha salva com sucesso: phcgbqlxajjnrxpyvfywewrapisddrmqconinlhahsbbtnabuh","timestamp":"2024-08-14T07:36:38.525Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-08-14T07:36:38.526Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Aug/2024:07:36:38 +0000] \"GET /password/simple/50/maiusculas HTTP/1.1\" 200 97 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2024-08-14T07:36:38.543Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-08-14T07:36:39.037Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-08-14T07:36:39.037Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-08-14T07:36:39.046Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: 46807735342866480186240388556416156823233578515020","timestamp":"2024-08-14T07:36:39.046Z"}
+{"level":"info","message":"Senha com numeros criada com sucesso.","timestamp":"2024-08-14T07:36:39.047Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:39:51.245Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:40:01.202Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:40:09.023Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:40:16.444Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:40:41.936Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:40:52.241Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:41:02.026Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:41:44.331Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:42:05.255Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:42:40.120Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:42:59.221Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:43:29.017Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:43:50.642Z"}
+{"level":"info","message":"Usuário não encontrado: jessica","timestamp":"2024-08-14T07:44:10.659Z"}
+{"level":"warn","message":"Tentativa de login com credenciais inválidas: jessica","timestamp":"2024-08-14T07:44:10.664Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Aug/2024:07:44:10 +0000] \"POST /auth/login HTTP/1.1\" 401 31 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2024-08-14T07:44:10.671Z"}
+{"level":"info","message":"Usuário não encontrado: jessica","timestamp":"2024-08-14T07:44:25.892Z"}
+{"level":"error","message":"Erro na inserção do usuário: client.query is not a function","timestamp":"2024-08-14T07:44:25.897Z"}
+{"level":"error","message":"Erro no registro do usuário: client.release is not a function","timestamp":"2024-08-14T07:44:25.901Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Aug/2024:07:44:25 +0000] \"POST /auth/register HTTP/1.1\" 404 153 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2024-08-14T07:44:25.906Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:45:47.065Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:45:56.176Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:46:05.241Z"}
+{"level":"info","message":"Usuário não encontrado: jessica","timestamp":"2024-08-14T07:46:09.197Z"}
+{"level":"error","message":"Erro na inserção do usuário: client.query is not a function","timestamp":"2024-08-14T07:46:09.198Z"}
+{"level":"error","message":"Erro no registro do usuário: client.release is not a function","timestamp":"2024-08-14T07:46:09.199Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Aug/2024:07:46:09 +0000] \"POST /auth/register HTTP/1.1\" 404 153 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2024-08-14T07:46:09.204Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:46:28.025Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:46:38.095Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:46:46.514Z"}
+{"level":"info","message":"Usuário não encontrado: jessica","timestamp":"2024-08-14T07:46:51.294Z"}
+{"level":"error","message":"Erro na inserção do usuário: client.query is not a function","timestamp":"2024-08-14T07:46:51.296Z"}
+{"level":"error","message":"Erro ao salvar usuário no banco de dados.","timestamp":"2024-08-14T07:46:51.296Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Aug/2024:07:46:51 +0000] \"POST /auth/register HTTP/1.1\" 500 36 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2024-08-14T07:46:51.302Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:47:08.123Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:50:45.711Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:51:00.337Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:51:09.236Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:51:25.498Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:52:24.764Z"}
+{"level":"info","message":"Usuário não encontrado: jessica","timestamp":"2024-08-14T07:54:17.034Z"}
+{"level":"error","message":"Erro na inserção do usuário: client.query is not a function","timestamp":"2024-08-14T07:54:17.040Z"}
+{"level":"error","message":"Erro ao salvar usuário no banco de dados.","timestamp":"2024-08-14T07:54:17.041Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Aug/2024:07:54:17 +0000] \"POST /auth/register HTTP/1.1\" 500 36 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2024-08-14T07:54:17.049Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:55:33.220Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:56:04.176Z"}
+{"level":"info","message":"Usuário não encontrado: jessica","timestamp":"2024-08-14T07:56:35.068Z"}
+{"level":"error","message":"Erro na inserção do usuário: client.query is not a function","timestamp":"2024-08-14T07:56:35.077Z"}
+{"level":"error","message":"Erro no registro do usuário: client.release is not a function","timestamp":"2024-08-14T07:56:35.078Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Aug/2024:07:56:35 +0000] \"POST /auth/register HTTP/1.1\" 404 153 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2024-08-14T07:56:35.084Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:58:08.974Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:58:18.526Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:58:24.671Z"}
+{"level":"info","message":"Usuário não encontrado: jessica","timestamp":"2024-08-14T07:58:26.980Z"}
+{"level":"error","message":"Erro na inserção do usuário: client.query is not a function","timestamp":"2024-08-14T07:58:26.981Z"}
+{"level":"error","message":"Erro no registro do usuário: client.release is not a function","timestamp":"2024-08-14T07:58:26.982Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Aug/2024:07:58:26 +0000] \"POST /auth/register HTTP/1.1\" 404 153 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2024-08-14T07:58:26.989Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:58:39.503Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T07:59:57.220Z"}
+{"level":"info","message":"Usuário não encontrado: jessica","timestamp":"2024-08-14T08:00:06.701Z"}
+{"level":"info","message":"Usuário salvo com sucesso: jessica","timestamp":"2024-08-14T08:00:06.729Z"}
+{"level":"info","message":"Usuário registrado com sucesso: jessica","timestamp":"2024-08-14T08:00:06.730Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Aug/2024:08:00:06 +0000] \"POST /auth/register HTTP/1.1\" 201 29 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","timestamp":"2024-08-14T08:00:06.740Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-08-14T08:00:14.768Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-09-06T16:13:15.480Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-09-06T16:13:18.430Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-09-06T16:45:41.879Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-09-06T16:45:46.445Z"}
+{"level":"info","message":"A API subiu com sucesso.","timestamp":"2024-09-06T17:01:19.801Z"}
