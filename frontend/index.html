@@ -26,36 +26,49 @@
   <main class="main">
     <section class="main__presentation">
       <h1 class="main__presentation__title">Crie suas senhas seguras aqui</h1>
-      <p class="main__presentation__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil nam assumenda fugiat beatae perspiciatis sed quaerat quam consectetur et facere, debitis quisquam natus, aliquid repellat maxime pariatur ex? Est odio placeat earum asperiores id rem accusamus molestiae minima! Reiciendis, quidem sit. Nam earum perferendis nemo adipisci dignissimos nobis ut nihil omnis, accusantium sapiente quibusdam commoddit itaque neque!</p>
+      <p class="main__presentation__text">A utilização de senhas seguras é essencial para proteger informações pessoais e dados sensíveis contra acessos não autorizados. Senhas fortes, que combinam letras, números e símbolos, dificultam ataques de força bruta e a ação de hackers. Elas atuam como a primeira linha de defesa em sistemas e contas online, reduzindo o risco de fraudes e invasões. Além disso, senhas seguras contribuem para a privacidade e integridade dos usuários na internet.</p>
     </section>
     <section class="main__group-form">
+      <div class="main__group-form__group-input">
+        <input
+         value="68£_l>{?Kr4A" 
+         type="text" 
+         name="input-invalid" 
+         id="input-invalid" 
+         class="main__group-form__group-input__input-invalid">
+        <a href="" class="main__group-form__group-input__btn-copy"><i class="bi bi-copy"></i></a>
+      </div>
       <form action="" class="main__form__group-form__form">
-        <div class="main__form__group-form__form__group-inputs">
-          <input type="text" name="input-invalid" id="input-invalid" class="main__form__group-form__form__group-inputs__input-invalid">
-          <a href="" class="main__form__group-form__form__group-inputs__btn-copy"><i class="bi bi-copy"></i></a>
-        </div>
+        <h1 class="title">Personalize sua senha</h1>
+        
         <div class="main__form__group-form__form__group-inputs">
           <div class="main__form__group-form__form__group-inputs__group">
-            <label for="">Numero de caracteres da senha</label>
-            <input type="range" name="" id="">
+            <label class="label" for="">Numero de caracteres da senha</label>
+            <div class="separator">
+              <input class="input-slide" type="range" name="" id="">
+              <input value="1" type="text" name="" id="" class="separator__input-number">
+            </div>
           </div>
           <div class="main__form__group-form__form__group-inputs__group"></div>
-            <div>
-              <label for="">Tipo de senha</label>
-              <select name="tipo-senha" id="tipo-senha">
-                <option value="Simples">Simples</option>
-                <option value="Alfanumérica">Alfanumérica</option>
-                <option value="Complexa">Complexa</option>
-                <option value="Personalizada">Personalizada</option>
-              </select>
-            </div>
-            <div></div>
-              <label for="">Tipos de caracteres da senha</label>
-              <select name="tipo-senha" id="tipo-senha">
-                <option value="maiusculas">Letras Maiúsculas</option>
-                <option value="minusculas">Letras Minúsculas</option>
-                <option value="numeros">Números</option>
-              </select>
+            <div class="group-selects">
+              <div class="group-selects__group">
+                <label class="label" for="">Tipo de senha</label>
+                <select name="tipo-senha" id="tipo-senha" class="select">
+                  <option value="Simples">Simples</option>
+                  <option value="Alfanumérica">Alfanumérica</option>
+                  <option value="Complexa">Complexa</option>
+                  <option value="Personalizada">Personalizada</option>
+                </select>
+              </div>
+              <div class="group-selects__group">
+                <label class="label" for="">Tipos de caracteres da senha</label>
+                <select name="tipo-senha" id="tipo-senha" class="select select2">
+                  <option value="maiusculas">Letras Maiúsculas</option>
+                  <option value="minusculas">Letras Minúsculas</option>
+                  <option value="numeros">Números</option>
+                </select>
+              </div>
+              <button class="btn-gerar-senha">Gerar senha</button>
             </div>
           </div>
         </div>
@@ -63,7 +76,100 @@
     </section>
   </main>
   <footer class="footer">
-    <p class="footer__text">© Jefferson da Silva Santos</p>
+    <div class="footer__title">
+      <p class="footer__title__title">Use senhas seguras</p>
+      <p class="footer__title__icons">
+        <i class="bi bi-google"></i> <i class="bi bi-google-play"></i> <i class="bi bi-youtube"></i> <i class="bi bi-android2"></i> <i class="bi bi-github"></i> <i class="bi bi-facebook"></i> <i class="bi bi-instagram"></i>
+      </p>
+    </div>
+    <div>
+      <h3>Redes Sociais</h3>
+      <ul class="list-footer">
+        <li>Segurança</li> <li>confiabilidade</li> <li>prevenção</li> <li>proteção de dados</li> <li>privacidade</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Banco</h3>
+      <ul class="list-footer">
+        <li>Segurança</li> <li>criptografia</li> <li>proteção financeira</li> <li>confidencialidade</li> <li>integridade</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>E-commerce</h3>
+      <ul class="list-footer">
+        <li>Confiança</li> 
+        <li>proteção de transações</li> 
+        <li>prevenção de fraudes</li> 
+        <li>privacidade</li> 
+        <li>segurança de pagamento</li>
+    </div>
+
+    <div>
+      <h3>Sistemas Empresariais</h3>
+      <ul class="list-footer">
+        <li>Proteção de informações sensíveis</li> <li>controle de acesso</li> <li>autenticação</li> <li>integridade de dados</li> <li>segurança operacional</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Serviços de E-mail</h3>
+      <ul class="list-footer">
+        <li>Prevenção de phishing</li> <li>privacidade</li> <li>proteção de identidade</li> <li>segurança de comunicação</li> <li>autenticação segura</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Plataformas Educacionais</h3>
+      <ul class="list-footer">
+        <li>Proteção de dados acadêmicos</li> <li>autenticação segura</li> <li>integridade das informações</li> <li>prevenção de acessos indevidos</li> <li>segurança digital</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Serviços de Streaming</h3>
+      <ul class="list-footer">
+        <li>Proteção de conta</li> <li>controle de acessos</li> <li>privacidade</li> <li>bloqueio de intrusos</li> <li>segurança de conteúdo</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Dispositivos Móveis</h3>
+      <ul class="list-footer">
+        <li>Proteção contra roubo de dados</li> <li>segurança de aplicativos</li> <li>privacidade</li> <li>bloqueio de acesso</li> <li>controle de informações</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Sistemas de Saúde</h3>
+      <ul class="list-footer">
+        <li>Proteção de dados sensíveis</li> <li>confidencialidade médica</li> <li>integridade de prontuários</li> <li>autenticação robusta</li> <li>privacidade do paciente</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Serviços de Nuvem</h3>
+      <ul class="list-footer">
+        <li>Proteção de dados armazenados</li> <li>criptografia</li> <li>controle de acessos</li> <li>integridade de arquivos</li> <li>segurança de compartilhamento</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Plataformas de Jogos Online</h3>
+      <ul class="list-footer">
+        <li>Prevenção de fraudes</li> <li>proteção de contas</li> <li>segurança de transações</li> <li>controle de acessos</li> <li>privacidade dos jogadores</li>
+      </ul>
+    </div>
+
+    <div class="footer__final">
+      <p>© Jefferson Santos</p>
+      <p>Todos os Direitos reservados <i style="color: rgb(0, 191, 255);" class="bi bi-lock-fill"></i></p>
+      <p>Aviso legal <i class="bi bi-shield-shaded"></i></p>
+      <p>Termos de uso <i style="color: yellow;" class="bi bi-search"></i></p>
+      <p>Centro de urgências</p>
+      <p>Segurança na web <i class="bi bi-lock-fill"></i></p>
+    </div>
   </footer>
 </body>
 </html>
