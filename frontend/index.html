@@ -13,6 +13,12 @@
       <p class="nav__logo">
         CodePass
       </p>
+
+      <div class="menu">
+        <div class="menu__line"></div>
+        <div class="menu__line"></div>
+        <div class="menu__line"></div>
+      </div>
       <ul class="nav__list-menu">
         <li class="nav__list-menu__item"><a href="">Uso</a></li>
         <li class="nav__list-menu__item"><a href="">Sobre</a></li>
@@ -26,7 +32,7 @@
   <main class="main">
     <section class="main__presentation">
       <h1 class="main__presentation__title">Crie suas senhas seguras aqui</h1>
-      <p class="main__presentation__text">A utilização de senhas seguras é essencial para proteger informações pessoais e dados sensíveis contra acessos não autorizados. Senhas fortes, que combinam letras, números e símbolos, dificultam ataques de força bruta e a ação de hackers. Elas atuam como a primeira linha de defesa em sistemas e contas online, reduzindo o risco de fraudes e invasões. Além disso, senhas seguras contribuem para a privacidade e integridade dos usuários na internet.</p>
+      <p class="main__presentation__text">A utilização de senhas seguras é essencial para <strong>proteger informações pessoais e dados sensíveis contra acessos não autorizados</strong>. Senhas fortes, que combinam letras, números e símbolos, dificultam ataques de força bruta e a ação de hackers. Elas atuam como a primeira <strong>linha de defesa</strong> em sistemas e contas online, reduzindo o risco de fraudes e invasões. Além disso, senhas seguras contribuem para a <strong>privacidade</strong> e <strong>integridade</strong> dos usuários na internet.</p>
     </section>
     <section class="main__group-form">
       <div class="main__group-form__group-input">
@@ -45,8 +51,8 @@
           <div class="main__form__group-form__form__group-inputs__group">
             <label class="label" for="">Numero de caracteres da senha</label>
             <div class="separator">
-              <input class="input-slide" type="range" name="" id="">
-              <input value="1" type="text" name="" id="" class="separator__input-number">
+              <input type="text" id="input-value" class="separator__input-number">
+              <input oninput="updateValueRange()" class="input-slide" type="range" id="input-range" min="4" max="128" value="0">
             </div>
           </div>
           <div class="main__form__group-form__form__group-inputs__group"></div>
@@ -75,6 +81,31 @@
       </form>
     </section>
   </main>
+  <div class="groupService">
+    <section class="section-service">
+      <h2 class="section-service__title">Explore boas práticas relacionadas a senhas</h2>
+      <section class="section-service__group-cards">
+        <article class="section-service__group-cards__card">
+          <span class="section-service__group-cards__card__suptitle">Faq</span>
+          <h3 class="section-service__group-cards__card__title">Como o gerador de senhas funciona?</h3>
+          <p class="section-service__group-cards__card__text">O que define se uma senha é forte e como o gerador de senhas do CodePass cria senhas que são sempre únicas e aleatórias?</p>
+          <a  class="section-service__group-cards__card__link" href="">Saiba-mais &gt;</a>
+        </article>
+        <article class="section-service__group-cards__card">
+          <span class="section-service__group-cards__card__suptitle">Learning</span>
+          <h3 class="section-service__group-cards__card__title">Dicas para criar senhas fortes</h3>
+          <p class="section-service__group-cards__card__text">Aprenda a criar senhas que protegerão suas contas e descubra por que o gerador de senhas do LastPass é o melhor.</p>
+          <a  class="section-service__group-cards__card__link" href="">Saiba-mais &gt;</a>
+        </article>
+        <article class="section-service__group-cards__card">
+          <span class="section-service__group-cards__card__suptitle">Comparison</span>
+          <h3 class="section-service__group-cards__card__title">LastPass Gerenciadores de SI</h3>
+          <p class="section-service__group-cards__card__text">Aprenda a criar senhas que protegerão suas contas e descubra por que o gerador de senhas do LastPass é o melhor.</p>
+          <a  class="section-service__group-cards__card__link" href="">Saiba-mais &gt;</a>
+        </article>
+      </section>
+    </section>
+  </div>
   <footer class="footer">
     <div class="footer__title">
       <p class="footer__title__title">Use senhas seguras</p>
@@ -169,7 +200,10 @@
       <p>Termos de uso <i style="color: yellow;" class="bi bi-search"></i></p>
       <p>Centro de urgências</p>
       <p>Segurança na web <i class="bi bi-lock-fill"></i></p>
+      <p>Confiança <i class="bi bi-lock-fill"></i></p>
+      <p>integridade <i class="bi bi-lock-fill"></i></p>
     </div>
   </footer>
+  <script src="src/js/script.js"></script>
 </body>
 </html>
