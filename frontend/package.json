@@ -11,7 +11,7 @@
     "watch:sass": "sass src/sass/main.scss src/css/styles.css -w"
   },
   "devDependencies": {
-    "sass": "^1.78.0",
+    "sass": "^1.79.1",
     "vite": "^5.4.1"
   },
   "dependencies": {
