@@ -10,6 +10,7 @@
 
 .groupNav {
   position: fixed;
+  z-index: 9000;
   top: 0;
   width: 100%;
   box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.7);
@@ -28,6 +29,7 @@
 .groupNav .nav .menu {
   width: 35px;
   height: 35px;
+  cursor: pointer;
   display: none;
   flex-direction: column;
   gap: 8px;
@@ -50,6 +52,7 @@
   transform: rotate(5deg) scale(120%);
 }
 .groupNav .nav__list-menu {
+  position: relative;
   list-style-type: none;
   display: flex;
   gap: 1em;
@@ -87,9 +90,6 @@
 }
 .main__presentation__text {
   font-size: 1.2em;
-}
-.main__presentation__text strong {
-  font-weight: 600;
 }
 .main__group-form {
   max-width: 50em;
@@ -138,6 +138,7 @@
   gap: 5px;
 }
 .main .separator {
+  position: relative;
   display: grid;
   grid-template-columns: 4em 1fr;
   align-items: center;
@@ -234,10 +235,13 @@
 }
 
 .groupService {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #f0f2f5;
 }
 .groupService .section-service {
-  min-height: 100vh;
   display: grid;
   grid-template-rows: 7.6em 20em;
   padding: 4em 2em 1em 2em;
@@ -506,7 +510,7 @@
 
 .form {
   display: grid;
-  grid-template-rows: 5em 1fr;
+  grid-template-rows: 6em 1fr;
   border-radius: 5px;
   width: 95%;
   max-width: 20.5em;

@@ -23,6 +23,7 @@ $borda-inputs: 1px solid rgb(205, 205, 205);
 
 .groupNav {
   position: fixed;
+  z-index: 9000;
   top: 0;
   width: 100%;
   box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.7);
@@ -41,6 +42,7 @@ $borda-inputs: 1px solid rgb(205, 205, 205);
     .menu {
       width: 35px;
       height: 35px;
+      cursor: pointer;
       display: none;
       flex-direction: column;
       gap: 8px;
@@ -67,6 +69,7 @@ $borda-inputs: 1px solid rgb(205, 205, 205);
     }
 
     &__list-menu {
+      position: relative;
       list-style-type: none;
       display: flex;
       gap: 1em;
@@ -109,10 +112,6 @@ $borda-inputs: 1px solid rgb(205, 205, 205);
 
     &__text {
       font-size: 1.2em;
-
-      strong {
-        font-weight: 600;
-      }
     }
   }
 
@@ -168,6 +167,7 @@ $borda-inputs: 1px solid rgb(205, 205, 205);
   }
 
   .separator {
+    position: relative;
     display: grid;
     grid-template-columns: 4em 1fr;
     align-items: center;
@@ -283,10 +283,13 @@ $borda-inputs: 1px solid rgb(205, 205, 205);
 }
 
 .groupService {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #f0f2f5;
 
   .section-service {
-    min-height: 100vh;
     display: grid;
     grid-template-rows: 7.6em 20em;
     padding: 4em 2em 1em 2em;
@@ -610,7 +613,7 @@ $borda-inputs: 1px solid rgb(205, 205, 205);
 
 %estilos-formulario {
   display: grid;
-  grid-template-rows: 5em 1fr;
+  grid-template-rows: 6em 1fr;
   border-radius: 5px;
   width: 95%;
   max-width: 20.5em;
