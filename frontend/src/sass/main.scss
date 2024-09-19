@@ -6,6 +6,7 @@ $cor-primaria: #d71340;
 $primeira-fonte: "Source Sans 3", sans-serif;
 $segunda-fonte: "Indie Flower", sans-serif;
 $largura-total: 1200px;
+$borda-inputs: 1px solid rgb(205, 205, 205);
 
 @mixin media($tamanho) {
   @media screen and (max-width: $tamanho) {
@@ -509,6 +510,12 @@ $largura-total: 1200px;
 }
 
 @include media(484px) {
+  .groupNav .nav .menu {
+    width: 30px;
+    height: 26px;
+    gap: 5px;
+  }
+
   .main__presentation__title {
     font-size: 1.6em;
     text-align: center;
@@ -534,12 +541,12 @@ $largura-total: 1200px;
   }
   .main .btn-gerar-senha {
     font-size: 1.2em;
-    padding: .6em 2em;
+    padding: 0.6em 2em;
   }
 
   .groupService .section-service__title {
     font-size: 2rem;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
   }
   .groupService .section-service {
     grid-template-rows: 1fr 7fr;
@@ -555,18 +562,206 @@ $largura-total: 1200px;
 }
 
 @include media(452px) {
-  .footer__title {
-  }
   .footer {
-    row-gap: 0;
+    row-gap: 1em;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 5em 1fr 1fr 1fr 1fr 1fr 13em;
-}
+  }
 }
 
 @include media(400px) {
   .groupService .section-service {
     display: flex;
     flex-direction: column;
+  }
 }
+
+@include media(383px) {
+  .footer {
+    grid-template-rows: 5em 1fr 1fr 1fr 1fr 1fr 17em;
+  }
+}
+
+//Formulário de Login
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $cor-primaria;
+}
+
+@mixin backgroundForm($form) {
+  @if $form == login {
+    background-color: #ffffff;
+  } @else if $form == cadastro {
+    background-color: #ffffff;
+  }
+}
+
+@mixin backgroundInternalForm($form) {
+  @if $form == login {
+    background-color: #a41335;
+  } @else if $form == cadastro {
+    background-color: rgb(0, 0, 0);
+  }
+}
+
+%estilos-formulario {
+  display: grid;
+  grid-template-rows: 5em 1fr;
+  border-radius: 5px;
+  width: 95%;
+  max-width: 20.5em;
+}
+
+
+.form {
+  @extend %estilos-formulario;
+  @include backgroundForm(login);
+
+  &__select-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #a41335;
+
+    &__title {
+      color: white;
+      font-family: $segunda-fonte;
+    }
+  }
+
+  &__select-inputs {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 1.5em;
+    gap: 1em;
+
+    .select-inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .input-icon-2 {
+        display: grid;
+        grid-template-columns: 2.5em 1fr 2.5em;
+
+        &__icon {
+          background-color: #a41335;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px 0px 0px 5px;
+        }
+        
+
+        .input-icon__input-2 {
+          padding: 10px;
+          border: none;
+          border-top: $borda-inputs;
+          border-bottom: $borda-inputs;
+          border-radius: 0px 0px 0px 0px;
+
+          &::placeholder {
+            font-size: 1.2em;
+            color: rgb(161, 160, 160);
+          }
+        }
+
+        .input-icon__icon-2 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-right: $borda-inputs;
+          border-top: $borda-inputs;
+          border-bottom: $borda-inputs;
+          color: rgb(160, 160, 160);
+          cursor: pointer;
+          border-radius: 0px 5px 5px 0px;
+
+        }
+      }
+
+      .input-icon {
+        display: grid;
+        grid-template-columns: 2.5em 1fr;
+
+        &__icon {
+          background-color: #a41335;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px 0px 0px 5px;
+        }
+
+        &__input {
+          padding: 10px;
+          border: none;
+          border-top: $borda-inputs;
+          border-bottom: $borda-inputs;
+          border-right: $borda-inputs;
+          border-radius: 0px 5px 5px 0px;
+
+          &::placeholder {
+            font-size: 1.2em;
+            color: rgb(161, 160, 160);
+          }
+        }
+      }
+    }
+
+    .text-form {
+      text-align: center;
+      font-size: 1em;
+    }
+
+    .link-form {
+      text-decoration: none;
+      color: $cor-primaria;
+    }
+
+    .btn-submit {
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 1.1em;
+      background-color: #a41335;
+      cursor: pointer;
+    }
+  }
+}
+
+
+// Cadastro
+
+.container-2 {
+  background-color: #161616;
+}
+
+.form-2 {
+  @include backgroundForm(login);
+}
+
+.form__select-title-2 {
+  @include backgroundInternalForm(cadastro);
+}
+
+.form__select-inputs .select-inputs .input-icon__icon__2 {
+  @include backgroundInternalForm(cadastro)
+}
+
+.form__select-inputs .btn-submit-2 {
+  @include backgroundInternalForm(cadastro);
+}
+
+.form__select-inputs .link-form-2 {
+ color: #3c3c3c;
+ font-weight: 600;
+ text-decoration: underline;
 }
