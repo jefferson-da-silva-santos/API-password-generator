@@ -629,7 +629,7 @@ $borda-inputs: 1px solid rgb(205, 205, 205);
     align-items: center;
     justify-content: center;
     border-radius: 5px 5px 0px 0px;
-    background-color: #d71341a5;
+    background-color: #d71341;
 
     &__title {
       color: white;
@@ -729,7 +729,7 @@ $borda-inputs: 1px solid rgb(205, 205, 205);
 
     .link-form {
       text-decoration: underline;
-      color: rgb(145, 143, 143);
+      color: rgb(200, 0, 0);
 
       &:hover {
         color: rgb(113, 113, 113);
@@ -742,7 +742,7 @@ $borda-inputs: 1px solid rgb(205, 205, 205);
       border-radius: 5px;
       color: white;
       font-size: 1.1em;
-      background-color: #a41313bf;
+      background-color: #a41313;
       cursor: pointer;
       transition: all ease .3s;
 
