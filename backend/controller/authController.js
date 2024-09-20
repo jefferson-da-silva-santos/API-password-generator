@@ -7,6 +7,7 @@ import logger from '../utils/logger.js';
 //Função para registrar usuário
 export const registerUser = async (req, res, next) => {
   try {
+    //valida o objeto json de entrada
     const { error } = userShema.validate(req.body);
 
     if (error) {

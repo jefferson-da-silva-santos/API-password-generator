@@ -130,7 +130,7 @@ $borda-inputs: 1px solid rgb(205, 205, 205);
 
       &__input-invalid {
         font-family: monospace;
-        padding: 0.8em 1em;
+        padding: 0.8em 0 0.8em 1em;
         font-weight: 500;
         font-size: 36px;
         line-height: 44px;
@@ -210,7 +210,7 @@ $borda-inputs: 1px solid rgb(205, 205, 205);
   .select {
     font-size: 1.1em;
     font-weight: 500;
-    padding: 0.5em 2em;
+    padding: 0.5em 1em;
     border: none;
     outline: none;
     color: white;
@@ -231,6 +231,7 @@ $borda-inputs: 1px solid rgb(205, 205, 205);
 
   .select2 {
     background-color: black;
+    max-width: 15em;
   }
 
   .title {
@@ -292,7 +293,7 @@ $borda-inputs: 1px solid rgb(205, 205, 205);
   .section-service {
     display: grid;
     grid-template-rows: 7.6em 20em;
-    padding: 4em 2em 1em 2em;
+    padding: 2em 2em 1em 2em;
     max-width: 1200px;
     margin: auto;
 

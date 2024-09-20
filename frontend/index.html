@@ -36,14 +36,13 @@
     <section class="main__group-form">
       <div class="main__group-form__group-input">
         <input
-         value="68£_l>{?Kr4A" 
          type="text" 
          name="input-invalid" 
          id="input-invalid" 
          class="main__group-form__group-input__input-invalid">
         <a href="" class="main__group-form__group-input__btn-copy"><i class="bi bi-copy"></i></a>
       </div>
-      <form action="" class="main__form__group-form__form">
+      <form class="main__form__group-form__form" id="formulario-senha">
         <h1 class="title">Personalize sua senha</h1>
         
         <div class="main__form__group-form__form__group-inputs">
@@ -54,26 +53,23 @@
               <input oninput="updateValueRange()" class="input-slide" type="range" id="input-range" min="4" max="128" value="0">
             </div>
           </div>
-          <div class="main__form__group-form__form__group-inputs__group"></div>
+          <div class="main__form__group-form__form__group-inputs__group">
             <div class="group-selects">
               <div class="group-selects__group">
                 <label class="label" for="">Tipo de senha</label>
                 <select name="tipo-senha" id="tipo-senha" class="select">
-                  <option value="Simples">Simples</option>
-                  <option value="Alfanumérica">Alfanumérica</option>
-                  <option value="Complexa">Complexa</option>
-                  <option value="Personalizada">Personalizada</option>
+                  <option value="simple">Simples</option>
+                  <option value="alphanumeric">Alfanumérica</option>
+                  <option value="complex">Complexa</option>
+                  <option value="personalized">Personalizada</option>
                 </select>
               </div>
               <div class="group-selects__group">
                 <label class="label" for="">Tipos de caracteres da senha</label>
-                <select name="tipo-senha" id="tipo-senha" class="select select2">
-                  <option value="maiusculas">Letras Maiúsculas</option>
-                  <option value="minusculas">Letras Minúsculas</option>
-                  <option value="numeros">Números</option>
+                <select name="tipo-senha" id="tipo-caracteres-senha" class="select select2">
                 </select>
               </div>
-              <button class="btn-gerar-senha">Gerar senha</button>
+              <button type="submit" id="btnGerarSenha" class="btn-gerar-senha">Gerar senha</button>
             </div>
           </div>
         </div>
