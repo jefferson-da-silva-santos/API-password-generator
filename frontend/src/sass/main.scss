@@ -21,6 +21,10 @@ $borda-inputs: 1px solid rgb(205, 205, 205);
   font-family: $primeira-fonte;
 }
 
+body {
+  position: relative;
+}
+
 .groupNav {
   position: fixed;
   z-index: 9000;
@@ -527,6 +531,7 @@ $borda-inputs: 1px solid rgb(205, 205, 205);
   .main__presentation__text {
     font-size: 1em;
     text-align: center;
+    color: green;
   }
 
   .main__group-form__group-input__input-invalid {
@@ -586,170 +591,137 @@ $borda-inputs: 1px solid rgb(205, 205, 205);
   }
 }
 
-//Formulário de Login
+//Option
 
-.container {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-}
+.groupOption {
+  background-color: #00000080;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 1000000;
 
-@mixin backgroundForm($form) {
-  @if $form == login {
-    background-color: #ccc;
-  } @else if $form == cadastro {
-    background-color: #ccc;
-  }
-}
+  .option {
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
+    background-color: white;
+    bottom: 0;
+    height: 60%;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 6fr 1fr;
+    padding: 3em 2em 1em 2em;
+    animation: optionAnimationTOP 0.5s ease 0s 1 normal forwards;
 
-@mixin backgroundInternalForm($form) {
-  @if $form == login {
-    background-color: #aaaaaa;
-  } @else if $form == cadastro {
-    background-color: #a41335;
-  }
-}
-
-%estilos-formulario {
-  display: grid;
-  grid-template-rows: 6em 1fr;
-  border-radius: 5px;
-  width: 95%;
-  max-width: 22em;
-}
-
-
-.form {
-  @extend %estilos-formulario;
-  @include backgroundForm(login);
-
-  &__select-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px 5px 0px 0px;
-    background-color: #d71341;
-
-    &__title {
-      color: white;
-      font-family: $segunda-fonte;
+    @keyframes optionAnimationTOP {
+      0% {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
-  }
 
-  &__select-inputs {
-    display: flex;
-    flex-direction: column;
-    padding: 2em 1.5em;
-    gap: 1em;
+    .closed-option {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 5px;
+      margin-right: 4px;
+      font-size: 1.5em;
+      color: #000000;
+    }
+    &__group-primary {
+      &__form {
+        display: flex;
+        flex-direction: column;
+        max-width: 15em;
+        gap: 1em;
+        padding: 1em 0em;
 
-    .select-inputs {
+        &__group {
+          display: grid;
+          grid-template-columns: 1fr 2em;
+
+          .ver-senha {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(77, 77, 77);
+            border: 1px solid rgb(122, 122, 122);
+            border-left: none;
+            font-size: 17px;
+            border-radius: 0 5px 5px 0;
+          }
+        }
+
+        input[type="text"] {
+          @extend %estilos-input;
+          border-radius: 5px;
+          border: 1px solid rgb(122, 122, 122);
+
+          &:focus {
+            padding-left: 10px;
+            outline: none;
+          }
+        }
+
+        input[type="password"] {
+          @extend %estilos-input;
+          border-radius: 5px 0 0 5px;
+          border-right: none;
+          border: 1px solid rgb(122, 122, 122);
+          border-right: none;
+
+          &:focus {
+            padding-left: 10px;
+            outline: none;
+          }
+        }
+
+        button {
+          padding: 7px 5px;
+          border: none;
+          background-color: $cor-primaria;
+          border-radius: 5px;
+          color: white;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: darken($cor-primaria, 5%);
+          }
+        }
+      }
+    }
+
+    &__group-secundary {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-
-      .input-icon-2 {
-        display: grid;
-        grid-template-columns: 2.5em 1fr 2.5em;
-
-        &__icon {
-          @include backgroundInternalForm(login);
-          color: white;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 5px 0px 0px 5px;
-        }
-        
-
-        .input-icon__input-2 {
-          padding: 10px;
-          outline: none;
-          border: none;
-          border-top: $borda-inputs;
-          border-bottom: $borda-inputs;
-          border-radius: 0px 0px 0px 0px;
-
-          &::placeholder {
-            font-size: 1.2em;
-            color: rgb(161, 160, 160);
-          }
-        }
-
-        .input-icon__icon-2 {
-          display: flex;
-          background-color: white;
-          align-items: center;
-          justify-content: center;
-          border-right: $borda-inputs;
-          border-top: $borda-inputs;
-          border-bottom: $borda-inputs;
-          color: rgb(160, 160, 160);
-          cursor: pointer;
-          border-radius: 0px 5px 5px 0px;
-
-        }
-      }
-
-      .input-icon {
-        display: grid;
-        grid-template-columns: 2.5em 1fr;
-
-        &__icon {
-          @include backgroundInternalForm(login);
-          color: white;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 5px 0px 0px 5px;
-        }
-
-        &__input {
-          padding: 10px;
-          outline: none;
-          border: none;
-          border-top: $borda-inputs;
-          border-bottom: $borda-inputs;
-          border-right: $borda-inputs;
-          border-radius: 0px 5px 5px 0px;
-
-          &::placeholder {
-            font-size: 1.2em;
-            color: rgb(161, 160, 160);
-          }
-        }
-      }
-    }
-
-    .text-form {
-      color: rgb(75, 75, 75);
       text-align: center;
-      font-size: 1em;
-    }
+      align-items: center;
 
-    .link-form {
-      text-decoration: underline;
-      color: rgb(200, 0, 0);
-
-      &:hover {
-        color: rgb(113, 113, 113);
+      ul {
+        list-style-type: none;
       }
     }
 
-    .btn-submit {
-      padding: 8px;
-      border: none;
-      border-radius: 5px;
-      color: white;
-      font-size: 1.1em;
-      background-color: #a41313;
-      cursor: pointer;
-      transition: all ease .3s;
-
-      &:hover {
-        background-color: #a41313dc;
-      }
+    &__group-terciary {
+      grid-column: 1 / -1;
+      border-top: 1px solid rgb(66, 66, 66);
+      padding: 8px 0 0 0;
     }
   }
+}
+
+%estilos-input {
+  font-size: 1em;
+  transition: all 0.3s ease;
+  padding: 5px;
 }
