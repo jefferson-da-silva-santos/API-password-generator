@@ -577,13 +577,13 @@ body {
   padding-left: 10px;
   outline: none;
 }
-.groupOption-login .option__group-primary__form input[type=password] {
+.groupOption-login .option__group-primary__form #password {
   border-radius: 5px 0 0 5px;
   border-right: none;
   border: 1px solid rgb(122, 122, 122);
   border-right: none;
 }
-.groupOption-login .option__group-primary__form input[type=password]:focus {
+.groupOption-login .option__group-primary__form #password:focus {
   padding-left: 10px;
   outline: none;
 }
@@ -724,7 +724,7 @@ body {
   padding: 8px 0 0 0;
 }
 
-.groupOption-login .option__group-primary__form input[type=text], .groupOption-login .option__group-primary__form input[type=password], .groupOption-cadastro .option__group-primary__form input[type=text], .groupOption-cadastro .option__group-primary__form input[type=password] {
+.groupOption-login .option__group-primary__form input[type=text], .groupOption-login .option__group-primary__form #password, .groupOption-cadastro .option__group-primary__form input[type=text], .groupOption-cadastro .option__group-primary__form input[type=password] {
   font-size: 1em;
   transition: all 0.3s ease;
   padding: 5px;

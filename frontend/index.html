@@ -17,12 +17,12 @@
         <form class="option__group-primary__form">
           <input placeholder="Username" type="text" name="username" id="username">
           <div class="option__group-primary__form__group">
-            <input placeholder="Password" type="password" name="password" id="password">
-          <a href="" class="ver-senha"><i class="bi bi-eye-slash"></i></a>
+            <input placeholder="Password" type="password" name="password" id="password" class="hidden">
+          <a href="" class="ver-senha ver-senha-login"><i class="bi bi-eye-slash"></i></a>
           </div>
           <small class="text-status-user">Insira seu usuário e sua senha acima</small>
           <button id="btn-entrar">Entrar</button>
-          <p>Ainda não tem conta? <a href="">Clique aqui</a></p>
+          <p>Ainda não tem conta? <a href="" class="link-cadastro">Clique aqui</a></p>
         </form>
       </div>
       <div class="option__group-secundary">
@@ -51,12 +51,12 @@
         <form class="option__group-primary__form">
           <input placeholder="Username" type="text" name="username" id="username-cadastro">
           <div class="option__group-primary__form__group">
-            <input placeholder="Password" type="password" name="password" id="password-cadastro">
-          <a href="" class="ver-senha"><i class="bi bi-eye-slash"></i></a>
+            <input placeholder="Password" type="password" name="password" id="password-cadastro" class="hidden">
+          <a href="" class="ver-senha ver-senha-cadastro"><i class="bi bi-eye-slash"></i></a>
           </div>
           <small class="text-status-user-cadastro">Insira seu usuário e sua senha acima</small>
           <button id="btn-register">Entrar</button>
-          <p>Ainda não tem conta? <a href="">Clique aqui</a></p>
+          <p>Já tem uma conta? <a href="" class="link-login">Clique aqui</a></p>
         </form>
       </div>
       <div class="option__group-secundary">
@@ -89,8 +89,8 @@
       <ul class="nav__list-menu">
         <li class="nav__list-menu__item"><a href="">Uso</a></li>
         <li class="nav__list-menu__item"><a href="">Sobre</a></li>
-        <li class="nav__list-menu__item"><a href="">Login</a></li>
-        <li class="nav__list-menu__item"><a class="item-login-register" href="">Cadastre-se</a>
+        <li class="nav__list-menu__item nav__list-menu__item--login"><a class="item-login-login" href="">Login</a></li>
+        <li class="nav__list-menu__item nav__list-menu__item--cadastro"><a class="item-login-register" href="">Cadastre-se</a>
         <li class="nav__list-menu__item"><a href=""><i class="bi bi-github"></i></a>
         </li>
       </ul>
@@ -107,7 +107,7 @@
          type="text" 
          name="input-invalid" 
          id="input-invalid" 
-         value="pZ$w2S.w45+-"
+         value="p0{ux&54-,KO8*]_34"
          class="main__group-form__group-input__input-invalid">
         <a href="" class="main__group-form__group-input__btn-copy"><i class="bi bi-copy"></i></a>
       </div>

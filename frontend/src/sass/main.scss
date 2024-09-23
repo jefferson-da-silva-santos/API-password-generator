@@ -671,7 +671,7 @@ body {
           }
         }
 
-        input[type="password"] {
+        #password {
           @extend %estilos-input;
           border-radius: 5px 0 0 5px;
           border-right: none;

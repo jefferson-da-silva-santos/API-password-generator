@@ -4279,3 +4279,128 @@
 {"level":"info","message":"Senha salva com sucesso: 3|R@IOrb:*obrwC+&3Hx","timestamp":"2024-09-22T18:24:04.056Z"}
 {"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-22T18:24:04.057Z"}
 {"level":"info","message":"::1 - - [22/Sep/2024:18:24:04 +0000] \"GET /password/complex/20/minusculas%20maiusculas%20numeros%20e%20caracteres%20especiais HTTP/1.1\" 200 109 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36\"","timestamp":"2024-09-22T18:24:04.058Z"}
+{"level":"info","message":"A API subiu com sucesso na porta 3000.","timestamp":"2024-09-23T17:41:12.976Z"}
+{"level":"info","message":"A API subiu com sucesso na porta 3000.","timestamp":"2024-09-23T17:41:15.341Z"}
+{"level":"info","message":"::1 - - [23/Sep/2024:18:30:26 +0000] \"OPTIONS /auth/register HTTP/1.1\" 204 0 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36\"","timestamp":"2024-09-23T18:30:26.716Z"}
+{"level":"info","message":"A API subiu com sucesso na porta 3000.","timestamp":"2024-09-23T18:30:36.453Z"}
+{"level":"info","message":"::1 - - [23/Sep/2024:18:30:41 +0000] \"OPTIONS /auth/register HTTP/1.1\" 204 0 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36\"","timestamp":"2024-09-23T18:30:41.286Z"}
+{"level":"info","message":"Usuário não encontrado: jurandir","timestamp":"2024-09-23T18:30:41.688Z"}
+{"level":"info","message":"Usuário salvo com sucesso: jurandir","timestamp":"2024-09-23T18:30:41.699Z"}
+{"level":"info","message":"Usuário registrado com sucesso: jurandir","timestamp":"2024-09-23T18:30:41.699Z"}
+{"level":"info","message":"::1 - - [23/Sep/2024:18:30:41 +0000] \"POST /auth/register HTTP/1.1\" 201 29 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36\"","timestamp":"2024-09-23T18:30:41.702Z"}
+{"level":"info","message":"::1 - - [23/Sep/2024:18:31:11 +0000] \"OPTIONS /auth/login HTTP/1.1\" 204 0 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36\"","timestamp":"2024-09-23T18:31:11.891Z"}
+{"level":"info","message":"Usuário encontrado: jurandir","timestamp":"2024-09-23T18:31:12.151Z"}
+{"level":"info","message":"Login bem-sucedido para o usuário: jurandir","timestamp":"2024-09-23T18:31:12.274Z"}
+{"level":"info","message":"::1 - - [23/Sep/2024:18:31:12 +0000] \"POST /auth/login HTTP/1.1\" 200 169 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36\"","timestamp":"2024-09-23T18:31:12.276Z"}
+{"level":"info","message":"::1 - - [23/Sep/2024:18:31:24 +0000] \"OPTIONS /password/complex/15/minusculas%20maiusculas%20numeros%20e%20caracteres%20especiais HTTP/1.1\" 204 0 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36\"","timestamp":"2024-09-23T18:31:24.938Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jurandir","timestamp":"2024-09-23T18:31:24.954Z"}
+{"level":"info","message":"Senha criada: yfX:N]j*o4;$L7e","timestamp":"2024-09-23T18:31:24.960Z"}
+{"level":"info","message":"Validando senha gerada: yfX:N]j*o4;$L7e","timestamp":"2024-09-23T18:31:24.960Z"}
+{"level":"info","message":"Gerando senha do tipo: minusculas maiusculas numeros e caracteres especiais","timestamp":"2024-09-23T18:31:24.964Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-23T18:31:25.297Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-23T18:31:25.298Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-23T18:31:25.372Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: yfX:N]j*o4;$L7e","timestamp":"2024-09-23T18:31:25.373Z"}
+{"level":"info","message":"Senha complexa criada com sucesso.","timestamp":"2024-09-23T18:31:25.373Z"}
+{"level":"info","message":"Senha salva com sucesso: yfX:N]j*o4;$L7e","timestamp":"2024-09-23T18:31:25.382Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-23T18:31:25.383Z"}
+{"level":"info","message":"::1 - - [23/Sep/2024:18:31:25 +0000] \"GET /password/complex/15/minusculas%20maiusculas%20numeros%20e%20caracteres%20especiais HTTP/1.1\" 200 104 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36\"","timestamp":"2024-09-23T18:31:25.386Z"}
+{"level":"info","message":"::1 - - [23/Sep/2024:19:22:16 +0000] \"OPTIONS /auth/login HTTP/1.1\" 204 0 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36\"","timestamp":"2024-09-23T19:22:16.173Z"}
+{"level":"info","message":"Usuário encontrado: jurandir","timestamp":"2024-09-23T19:22:16.518Z"}
+{"level":"info","message":"Login bem-sucedido para o usuário: jurandir","timestamp":"2024-09-23T19:22:16.675Z"}
+{"level":"info","message":"::1 - - [23/Sep/2024:19:22:16 +0000] \"POST /auth/login HTTP/1.1\" 200 169 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36\"","timestamp":"2024-09-23T19:22:16.678Z"}
+{"level":"info","message":"::1 - - [23/Sep/2024:19:22:39 +0000] \"OPTIONS /password/simple/52/maiusculas HTTP/1.1\" 204 0 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36\"","timestamp":"2024-09-23T19:22:39.054Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jurandir","timestamp":"2024-09-23T19:22:39.063Z"}
+{"level":"info","message":"Senha criada: mvlnxgptcmaayriqbguccmtgytymqtdliljevjwpilevcwvllltd","timestamp":"2024-09-23T19:22:39.079Z"}
+{"level":"info","message":"Validando senha gerada: mvlnxgptcmaayriqbguccmtgytymqtdliljevjwpilevcwvllltd","timestamp":"2024-09-23T19:22:39.080Z"}
+{"level":"warn","message":"Senha inválida gerada: mvlnxgptcmaayriqbguccmtgytymqtdliljevjwpilevcwvllltd","timestamp":"2024-09-23T19:22:39.081Z"}
+{"level":"info","message":"Senha criada: jdtvnxisokhfeeyalgeoqyqmdqnoennchjctwjkpwykkedvyannh","timestamp":"2024-09-23T19:22:39.081Z"}
+{"level":"info","message":"Validando senha gerada: jdtvnxisokhfeeyalgeoqyqmdqnoennchjctwjkpwykkedvyannh","timestamp":"2024-09-23T19:22:39.082Z"}
+{"level":"info","message":"Senha criada: wrdhgwskcmcuanbmpsjkskxyaoobvjhwmavdkblngayynxfjyuvv","timestamp":"2024-09-23T19:22:39.085Z"}
+{"level":"info","message":"Validando senha gerada: wrdhgwskcmcuanbmpsjkskxyaoobvjhwmavdkblngayynxfjyuvv","timestamp":"2024-09-23T19:22:39.086Z"}
+{"level":"info","message":"Senha criada: 5805474328525321141284376172408341747280320070168583","timestamp":"2024-09-23T19:22:39.088Z"}
+{"level":"info","message":"Validando senha gerada: 5805474328525321141284376172408341747280320070168583","timestamp":"2024-09-23T19:22:39.089Z"}
+{"level":"info","message":"Gerando senha do tipo: maiusculas","timestamp":"2024-09-23T19:22:39.091Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-23T19:22:39.312Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-23T19:22:39.313Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-23T19:22:39.361Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: jdtvnxisokhfeeyalgeoqyqmdqnoennchjctwjkpwykkedvyannh","timestamp":"2024-09-23T19:22:39.361Z"}
+{"level":"info","message":"Senha com letras minúsculas criada com sucesso.","timestamp":"2024-09-23T19:22:39.363Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-23T19:22:39.479Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-23T19:22:39.480Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-23T19:22:39.490Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: wrdhgwskcmcuanbmpsjkskxyaoobvjhwmavdkblngayynxfjyuvv","timestamp":"2024-09-23T19:22:39.491Z"}
+{"level":"info","message":"Senha com letras maiúsculas criada com sucesso.","timestamp":"2024-09-23T19:22:39.492Z"}
+{"level":"info","message":"Senha salva com sucesso: wrdhgwskcmcuanbmpsjkskxyaoobvjhwmavdkblngayynxfjyuvv","timestamp":"2024-09-23T19:22:39.498Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-23T19:22:39.499Z"}
+{"level":"info","message":"::1 - - [23/Sep/2024:19:22:39 +0000] \"GET /password/simple/52/maiusculas HTTP/1.1\" 200 99 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36\"","timestamp":"2024-09-23T19:22:39.502Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-23T19:22:39.729Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-23T19:22:39.730Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-23T19:22:39.738Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: 5805474328525321141284376172408341747280320070168583","timestamp":"2024-09-23T19:22:39.739Z"}
+{"level":"info","message":"Senha com numeros criada com sucesso.","timestamp":"2024-09-23T19:22:39.739Z"}
+{"level":"info","message":"::1 - - [23/Sep/2024:19:22:42 +0000] \"OPTIONS /password/simple/26/maiusculas HTTP/1.1\" 204 0 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36\"","timestamp":"2024-09-23T19:22:42.567Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jurandir","timestamp":"2024-09-23T19:22:42.577Z"}
+{"level":"info","message":"Senha criada: kllndqlcidutcvkvmebgtkbwog","timestamp":"2024-09-23T19:22:42.579Z"}
+{"level":"info","message":"Validando senha gerada: kllndqlcidutcvkvmebgtkbwog","timestamp":"2024-09-23T19:22:42.580Z"}
+{"level":"info","message":"Senha criada: cckduooapuneyslobbtkodyhje","timestamp":"2024-09-23T19:22:42.583Z"}
+{"level":"info","message":"Validando senha gerada: cckduooapuneyslobbtkodyhje","timestamp":"2024-09-23T19:22:42.584Z"}
+{"level":"info","message":"Senha criada: 52160213026860817135013717","timestamp":"2024-09-23T19:22:42.586Z"}
+{"level":"info","message":"Validando senha gerada: 52160213026860817135013717","timestamp":"2024-09-23T19:22:42.587Z"}
+{"level":"info","message":"Gerando senha do tipo: maiusculas","timestamp":"2024-09-23T19:22:42.588Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-23T19:22:42.594Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-23T19:22:42.594Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-23T19:22:42.598Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-23T19:22:42.599Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-23T19:22:42.602Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-23T19:22:42.605Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-23T19:22:42.612Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: kllndqlcidutcvkvmebgtkbwog","timestamp":"2024-09-23T19:22:42.613Z"}
+{"level":"info","message":"Senha com letras minúsculas criada com sucesso.","timestamp":"2024-09-23T19:22:42.614Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-23T19:22:42.615Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: cckduooapuneyslobbtkodyhje","timestamp":"2024-09-23T19:22:42.616Z"}
+{"level":"info","message":"Senha com letras maiúsculas criada com sucesso.","timestamp":"2024-09-23T19:22:42.617Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-23T19:22:42.620Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: 52160213026860817135013717","timestamp":"2024-09-23T19:22:42.623Z"}
+{"level":"info","message":"Senha com numeros criada com sucesso.","timestamp":"2024-09-23T19:22:42.624Z"}
+{"level":"info","message":"Senha salva com sucesso: cckduooapuneyslobbtkodyhje","timestamp":"2024-09-23T19:22:42.626Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-23T19:22:42.627Z"}
+{"level":"info","message":"::1 - - [23/Sep/2024:19:22:42 +0000] \"GET /password/simple/26/maiusculas HTTP/1.1\" 200 73 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36\"","timestamp":"2024-09-23T19:22:42.630Z"}
+{"level":"info","message":"::1 - - [23/Sep/2024:19:22:48 +0000] \"OPTIONS /password/simple/4/maiusculas HTTP/1.1\" 204 0 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36\"","timestamp":"2024-09-23T19:22:48.989Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jurandir","timestamp":"2024-09-23T19:22:48.994Z"}
+{"level":"info","message":"Senha criada: luut","timestamp":"2024-09-23T19:22:48.997Z"}
+{"level":"info","message":"Validando senha gerada: luut","timestamp":"2024-09-23T19:22:48.998Z"}
+{"level":"info","message":"Senha criada: edag","timestamp":"2024-09-23T19:22:48.999Z"}
+{"level":"info","message":"Validando senha gerada: edag","timestamp":"2024-09-23T19:22:49.000Z"}
+{"level":"info","message":"Senha criada: 3620","timestamp":"2024-09-23T19:22:49.003Z"}
+{"level":"info","message":"Validando senha gerada: 3620","timestamp":"2024-09-23T19:22:49.004Z"}
+{"level":"info","message":"Gerando senha do tipo: maiusculas","timestamp":"2024-09-23T19:22:49.006Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-23T19:22:49.009Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-23T19:22:49.010Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-23T19:22:49.015Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-23T19:22:49.019Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-23T19:22:49.022Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-23T19:22:49.023Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-23T19:22:49.026Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: luut","timestamp":"2024-09-23T19:22:49.028Z"}
+{"level":"info","message":"Senha com letras minúsculas criada com sucesso.","timestamp":"2024-09-23T19:22:49.031Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-23T19:22:49.036Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: edag","timestamp":"2024-09-23T19:22:49.038Z"}
+{"level":"info","message":"Senha com letras maiúsculas criada com sucesso.","timestamp":"2024-09-23T19:22:49.040Z"}
+{"level":"info","message":"Senha comum encontrada no banco de dados.","timestamp":"2024-09-23T19:22:49.058Z"}
+{"level":"warn","message":"Senha inválida gerada: 3620","timestamp":"2024-09-23T19:22:49.059Z"}
+{"level":"info","message":"Senha criada: 3218","timestamp":"2024-09-23T19:22:49.059Z"}
+{"level":"info","message":"Validando senha gerada: 3218","timestamp":"2024-09-23T19:22:49.060Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-23T19:22:49.062Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-23T19:22:49.063Z"}
+{"level":"info","message":"Senha salva com sucesso: edag","timestamp":"2024-09-23T19:22:49.066Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-23T19:22:49.067Z"}
+{"level":"info","message":"::1 - - [23/Sep/2024:19:22:49 +0000] \"GET /password/simple/4/maiusculas HTTP/1.1\" 200 50 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36\"","timestamp":"2024-09-23T19:22:49.070Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-23T19:22:49.077Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: 3218","timestamp":"2024-09-23T19:22:49.078Z"}
+{"level":"info","message":"Senha com numeros criada com sucesso.","timestamp":"2024-09-23T19:22:49.078Z"}
+{"level":"info","message":"::1 - - [23/Sep/2024:19:32:08 +0000] \"OPTIONS /auth/login HTTP/1.1\" 204 0 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36\"","timestamp":"2024-09-23T19:32:08.750Z"}
+{"level":"warn","message":"Validação falhou no login do usuário: \"username\" is not allowed to be empty","timestamp":"2024-09-23T19:32:08.824Z"}
+{"level":"info","message":"::1 - - [23/Sep/2024:19:32:08 +0000] \"POST /auth/login HTTP/1.1\" 400 51 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36\"","timestamp":"2024-09-23T19:32:08.827Z"}
+{"level":"info","message":"A API subiu com sucesso na porta 3000.","timestamp":"2024-09-23T20:12:57.587Z"}
+{"level":"info","message":"A API subiu com sucesso na porta 3000.","timestamp":"2024-09-23T20:13:00.189Z"}

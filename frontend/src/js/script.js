@@ -94,7 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       localStorage.setItem('token', token.token);
-      localStorage.setItem('userLogged', true);
+      toogleUserLocalStorage('userLogged');
+      hideElement('.nav__list-menu__item--login');
       statusUser('Usuário logado com sucesso!', 'green', '.text-status-user');
     } catch (error) {
       statusUser('Erro no login do usuário!', 'red');
@@ -102,11 +103,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  //Logica para abrir o option de cadastro
+  //Logica para abrir o option de cadastro pelo menu
   getElement('.item-login-register').addEventListener('click', (event) => {
     event.preventDefault();
     showOption('Registre-se no CodePass', '.groupOption-cadastro');
   });
+
+  //Logica para abrir o option de login pelo menu
+  getElement('.item-login-login').addEventListener('click', (event) => {
+    event.preventDefault();
+    showOption('Faça login', '.groupOption-login');
+  })
 
   //Logica de click
   document.getElementById('btn-register').addEventListener('click', async () => {
@@ -121,13 +128,52 @@ document.addEventListener('DOMContentLoaded', () => {
         throw new Error('Erro no registro');
       }
       toogleUserLocalStorage('userRegistered');
+      hideElement('.nav__list-menu__item--cadastro');
       statusUser('Usuário registrado com sucesso!', 'green', '.text-status-user-cadastro');
     } catch (error) {
       statusUser('Erro no cadastro do usuário', 'red', '.text-status-user-cadastro');
       throw new Error(`Erro no cadastro do usuário: ${error.message}`)
     }
   });
+
+  getElement('.link-cadastro').addEventListener('click', (event) => {
+    event.preventDefault();
+    closedOption('.groupOption-login');
+    setTimeout(() => {
+      showOption('Registre-se no CodePass', '.groupOption-cadastro');
+    }, 500);
+  });
+
+  getElement('.link-login').addEventListener('click', (event) => {
+    event.preventDefault();
+    closedOption('.groupOption-cadastro');
+    setTimeout(() => {
+      showOption('Faça login', '.groupOption-login');
+    }, 500);
+  });
+
+
+  //Chamada da função de mostrar e ocultar senha
+  eventSeePassword('.ver-senha-login', 'password');
+  eventSeePassword('.ver-senha-cadastro', 'password-cadastro');
 });
+
+//Função responsável por mostrar e ocultar a senha dos forms dos options com o click do usuário
+function eventSeePassword(classBtn, idInput) {
+  getElement(classBtn).addEventListener('click', (event) => {
+    event.preventDefault();
+    const input = document.getElementById(idInput);
+    if (input.classList.contains('hidden')) {
+      input.classList.remove('hidden');
+      input.classList.add('visible');
+      input.setAttribute('type', 'text');
+    } else {
+      input.classList.remove('visible');
+      input.classList.add('hidden');
+      input.setAttribute('type', 'password');
+    }
+  });
+}
 
 //função responsável por escrever mensagem nos status do usuario login
 function statusUser(text, color, classElement) {
@@ -157,6 +203,10 @@ async function createPassword(objectSenha, token) {
   } catch (error) {
     throw new Error('Erro na requisição');
   }
+}
+
+function hideElement(classElement) {
+  getElement(classElement).style.display = 'none';
 }
 
 /* Função responsável por abrir e fechar o menu mobile com o click do usuário*/
@@ -266,10 +316,10 @@ function showOption(text, classOption) {
     behavior: 'smooth' // Faz o scroll suave, você pode remover se quiser um scroll instantâneo
   });
 
+  document.body.style.overflow = 'hidden';
   setTimeout(() => {
     document.querySelector(classOption).style.display = 'flex';
     document.querySelector(classText).textContent = text;
-    document.body.style.overflow = 'hidden';
   }, 500);
 }
 
