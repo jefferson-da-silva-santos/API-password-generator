@@ -8,12 +8,12 @@ export class PasswordGenerator {
   numbers = '0123456789'.split('');
   specialCharacters = "!@#$%^&*()-_=+[]{}|\\;:'\",./<>?~`".split('');
   //alfanumericas
-  smallLettersAndNumbers = 'abcdefghijklmnopqrstuvwxyz0123456789'.split('');
+  smallLettersAndNumbers = 'abcdefghijklmnopqrstuvxyz0123456789'.split('');
   capitalLettersAndNumbers = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'.split('');
   smallLettersAndCapitalLetters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
   smallLettersAndCapitalLettersNumbers = '0123456789abcdefghijklmn0123456789opqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
   //complexas
-  smallLettersAndCapitalLettersNumbersSpecialCharacters = "0123456789abcdefghijklmn0123456789opqrstuvwxyz0123456789ABCDEFGH!@#$%^&*()-_=+[]{}|\\;:'\",./<>?~`IJKLMNOPQRSTUVWXYZ".split('');
+  smallLettersAndCapitalLettersNumbersSpecialCharacters = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()-_=+[]{}|\\;:'\",./<>?~`".split('');
 
   //construtor
   constructor(length, type) {

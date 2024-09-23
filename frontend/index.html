@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/css/styles.css">
+  <title>Gerador de Senhas</title>
+</head>
+<body>
+  <div class="groupOption-login">
+    <aside class="option">
+      <a href="" class="closed-option-login">
+        <i class="bi bi-x-circle"></i>
+      </a>
+      <div class="option__group-primary">
+        <p class="option__group-primary__title-login"></p>
+        <form class="option__group-primary__form">
+          <input placeholder="Username" type="text" name="username" id="username">
+          <div class="option__group-primary__form__group">
+            <input placeholder="Password" type="password" name="password" id="password">
+          <a href="" class="ver-senha"><i class="bi bi-eye-slash"></i></a>
+          </div>
+          <small class="text-status-user">Insira seu usuário e sua senha acima</small>
+          <button id="btn-entrar">Entrar</button>
+          <p>Ainda não tem conta? <a href="">Clique aqui</a></p>
+        </form>
+      </div>
+      <div class="option__group-secundary">
+        <div class="option__group-secundary__group">
+          <p>Social</p>
+          <ul>
+            <li>Facebook</li>
+            <li>Instagran</li>
+            <li>Youtube</li>
+            <li>Twiter</li>
+          </ul>
+        </div>
+      </div>
+      <div class="option__group-terciary">
+        © CodePass 2024
+      </div>
+    </aside>
+  </div>
+  <div class="groupOption-cadastro">
+    <aside class="option">
+      <a href="" class="closed-option-cadastro">
+        <i class="bi bi-x-circle"></i>
+      </a>
+      <div class="option__group-primary">
+        <p class="option__group-primary__title-cadastro"></p>
+        <form class="option__group-primary__form">
+          <input placeholder="Username" type="text" name="username" id="username-cadastro">
+          <div class="option__group-primary__form__group">
+            <input placeholder="Password" type="password" name="password" id="password-cadastro">
+          <a href="" class="ver-senha"><i class="bi bi-eye-slash"></i></a>
+          </div>
+          <small class="text-status-user-cadastro">Insira seu usuário e sua senha acima</small>
+          <button id="btn-register">Entrar</button>
+          <p>Ainda não tem conta? <a href="">Clique aqui</a></p>
+        </form>
+      </div>
+      <div class="option__group-secundary">
+        <div class="option__group-secundary__group">
+          <p>Social</p>
+          <ul>
+            <li>Facebook</li>
+            <li>Instagran</li>
+            <li>Youtube</li>
+            <li>Twiter</li>
+          </ul>
+        </div>
+      </div>
+      <div class="option__group-terciary">
+        © CodePass 2024
+      </div>
+    </aside>
+  </div>
+  <div class="groupNav">
+    <nav class="nav">
+      <p class="nav__logo">
+        CodePass
+      </p>
+
+      <div class="menu">
+        <div class="menu__line"></div>
+        <div class="menu__line"></div>
+        <div class="menu__line"></div>
+      </div>
+      <ul class="nav__list-menu">
+        <li class="nav__list-menu__item"><a href="">Uso</a></li>
+        <li class="nav__list-menu__item"><a href="">Sobre</a></li>
+        <li class="nav__list-menu__item"><a href="">Login</a></li>
+        <li class="nav__list-menu__item"><a class="item-login-register" href="">Cadastre-se</a>
+        <li class="nav__list-menu__item"><a href=""><i class="bi bi-github"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <main class="main">
+    <section class="main__presentation">
+      <h1 class="main__presentation__title">Crie suas senhas seguras aqui</h1>
+      <p class="main__presentation__text">A utilização de senhas seguras é essencial para proteger informações pessoais e dados sensíveis contra acessos não autorizados. Senhas fortes, que combinam letras, números e símbolos, dificultam ataques de força bruta e a ação de hackers. Elas atuam como a primeira linha de defesa em sistemas e contas online, reduzindo o risco de fraudes e invasões. Além disso, senhas seguras contribuem para a privacidade e integridade dos usuários na internet.</p>
+    </section>
+    <section class="main__group-form">
+      <div class="main__group-form__group-input">
+        <input
+         type="text" 
+         name="input-invalid" 
+         id="input-invalid" 
+         value="pZ$w2S.w45+-"
+         class="main__group-form__group-input__input-invalid">
+        <a href="" class="main__group-form__group-input__btn-copy"><i class="bi bi-copy"></i></a>
+      </div>
+      <form class="main__form__group-form__form formulario" id="formulario-senha">
+        <h1 class="title">Personalize sua senha</h1>
+        
+        <div class="main__form__group-form__form__group-inputs">
+          <div class="main__form__group-form__form__group-inputs__group">
+            <label class="label" for="">Numero de caracteres da senha</label>
+            <div class="separator">
+              <input type="text" id="input-value" class="separator__input-number">
+              <input oninput="updateValueRange()" class="input-slide" type="range" id="input-range" min="4" max="128" value="0">
+            </div>
+          </div>
+          <div class="main__form__group-form__form__group-inputs__group">
+            <div class="group-selects">
+              <div class="group-selects__group">
+                <label class="label" for="">Tipo de senha</label>
+                <select name="tipo-senha" id="tipo-senha" class="select">
+                  <option value="simple">Simples</option>
+                  <option value="alphanumeric">Alfanumérica</option>
+                  <option value="complex">Complexa</option>
+                  <option value="personalized">Personalizada</option>
+                </select>
+              </div>
+              <div class="group-selects__group">
+                <label class="label" for="">Tipos de caracteres da senha</label>
+                <select name="tipo-senha" id="tipo-caracteres-senha" class="select select2">
+                </select>
+              </div>
+              <button type="submit" id="btnGerarSenha" class="btn-gerar-senha">Gerar senha</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+  <div class="groupService">
+    <section class="section-service">
+      <h2 class="section-service__title">Explore boas práticas relacionadas a senhas</h2>
+      <section class="section-service__group-cards">
+        <article class="section-service__group-cards__card">
+          <span class="section-service__group-cards__card__suptitle">Faq</span>
+          <h3 class="section-service__group-cards__card__title">Como o gerador de senhas funciona?</h3>
+          <p class="section-service__group-cards__card__text">O que define se uma senha é forte e como o gerador de senhas do CodePass cria senhas que são sempre únicas e aleatórias?</p>
+          <a  class="section-service__group-cards__card__link" href="">Saiba-mais &gt;</a>
+        </article>
+        <article class="section-service__group-cards__card">
+          <span class="section-service__group-cards__card__suptitle">Learning</span>
+          <h3 class="section-service__group-cards__card__title">Dicas para criar senhas fortes</h3>
+          <p class="section-service__group-cards__card__text">Aprenda a criar senhas que protegerão suas contas e descubra por que o gerador de senhas do LastPass é o melhor.</p>
+          <a  class="section-service__group-cards__card__link" href="">Saiba-mais &gt;</a>
+        </article>
+        <article class="section-service__group-cards__card">
+          <span class="section-service__group-cards__card__suptitle">Comparison</span>
+          <h3 class="section-service__group-cards__card__title">LastPass Gerenciadores de SI</h3>
+          <p class="section-service__group-cards__card__text">Aprenda a criar senhas que protegerão suas contas e descubra por que o gerador de senhas do LastPass é o melhor.</p>
+          <a  class="section-service__group-cards__card__link" href="">Saiba-mais &gt;</a>
+        </article>
+      </section>
+    </section>
+  </div>
+  <footer class="footer">
+    <div class="footer__title">
+      <p class="footer__title__title">Use senhas seguras</p>
+      <p class="footer__title__icons">
+        <i class="bi bi-google"></i> <i class="bi bi-google-play"></i> <i class="bi bi-youtube"></i> <i class="bi bi-android2"></i> <i class="bi bi-github"></i> <i class="bi bi-facebook"></i> <i class="bi bi-instagram"></i>
+      </p>
+    </div>
+
+    <div>
+      <h3>Redes Sociais</h3>
+      <ul class="list-footer">
+        <li>Segurança</li> <li>Confiabilidade</li> <li>Prevenção</li> <li>Proteção de Dados</li> <li>Privacidade</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Banco</h3>
+      <ul class="list-footer">
+        <li>Segurança</li> <li>Criptografia</li> <li>Proteção Financeira</li> <li>Confidencialidade</li> <li>Integridade</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>E-commerce</h3>
+      <ul class="list-footer">
+        <li>Confiança</li> 
+        <li>Proteção de Transações</li> 
+        <li>Prevenção de Fraudes</li> 
+        <li>Privacidade</li> 
+        <li>Segurança de Pagamento</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Sistemas Empresariais</h3>
+      <ul class="list-footer">
+        <li>Proteção de Informações Sensíveis</li> <li>Controle de Acesso</li> <li>Autenticação</li> <li>Integridade de Dados</li> <li>Segurança Operacional</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Serviços de E-mail</h3>
+      <ul class="list-footer">
+        <li>Prevenção de Phishing</li> <li>Privacidade</li> <li>Proteção de Identidade</li> <li>Segurança de Comunicação</li> <li>Autenticação Segura</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Plataformas Educacionais</h3>
+      <ul class="list-footer">
+        <li>Proteção de Dados Acadêmicos</li> <li>Autenticação Segura</li> <li>Integridade das Informações</li> <li>Prevenção de Acessos Indevidos</li> <li>Segurança Digital</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Serviços de Streaming</h3>
+      <ul class="list-footer">
+        <li>Proteção de Conta</li> <li>Controle de Acessos</li> <li>Privacidade</li> <li>Bloqueio de Intrusos</li> <li>Segurança de Conteúdo</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Dispositivos Móveis</h3>
+      <ul class="list-footer">
+        <li>Proteção Contra Roubo de Dados</li> <li>Segurança de Aplicativos</li> <li>Privacidade</li> <li>Bloqueio de Acesso</li> <li>Controle de Informações</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Sistemas de Saúde</h3>
+      <ul class="list-footer">
+        <li>Proteção de Dados Sensíveis</li> <li>Confidencialidade Médica</li> <li>Integridade de Prontuários</li> <li>Autenticação Robusta</li> <li>Privacidade do Paciente</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Serviços de Nuvem</h3>
+      <ul class="list-footer">
+        <li>Proteção de Dados Armazenados</li> <li>Criptografia</li> <li>Controle de Acessos</li> <li>Integridade de Arquivos</li> <li>Segurança de Compartilhamento</li>
+      </ul>
+    </div>
+    
+    <div class="footer__pnlt">
+      <h3>Plataformas de Jogos Online</h3>
+      <ul class="list-footer">
+        <li>Prevenção de Fraudes</li> <li>Proteção de Contas</li> <li>Segurança de Transações</li> <li>Controle de Acessos</li> <li>Privacidade dos Jogadores</li>
+      </ul>
+    </div>    
+
+    <div class="footer__final">
+      <p>© Jefferson Santos</p>
+      <p>Todos os Direitos reservados <i style="color: rgb(0, 191, 255);" class="bi bi-lock-fill"></i></p>
+      <p>Aviso legal <i class="bi bi-shield-shaded"></i></p>
+      <p>Termos de uso <i style="color: yellow;" class="bi bi-search"></i></p>
+      <p>Centro de urgências</p>
+      <p>Segurança na web <i class="bi bi-lock-fill"></i></p>
+      <p>Confiança <i class="bi bi-lock-fill"></i></p>
+      <p>integridade <i class="bi bi-lock-fill"></i></p>
+    </div>
+  </footer>
+  <script src="src/js/script.js"></script>
+</body>
+</html>
