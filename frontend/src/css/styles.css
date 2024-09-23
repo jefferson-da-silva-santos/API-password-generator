@@ -454,6 +454,7 @@ body {
   .main__presentation__text {
     font-size: 1em;
     text-align: center;
+    color: green;
   }
   .main__group-form__group-input__input-invalid {
     font-size: 27px;
@@ -505,7 +506,7 @@ body {
     grid-template-rows: 5em 1fr 1fr 1fr 1fr 1fr 17em;
   }
 }
-.groupOption {
+.groupOption-login {
   background-color: rgba(0, 0, 0, 0.5019607843);
   position: absolute;
   top: 0;
@@ -516,7 +517,7 @@ body {
   justify-content: flex-end;
   z-index: 1000000;
 }
-.groupOption .option {
+.groupOption-login .option {
   position: relative;
   border-radius: 20px 20px 0px 0px;
   background-color: white;
@@ -538,7 +539,7 @@ body {
     opacity: 1;
   }
 }
-.groupOption .option .closed-option {
+.groupOption-login .option .closed-option-login {
   position: absolute;
   right: 0;
   top: 0;
@@ -547,18 +548,18 @@ body {
   font-size: 1.5em;
   color: #000000;
 }
-.groupOption .option__group-primary__form {
+.groupOption-login .option__group-primary__form {
   display: flex;
   flex-direction: column;
   max-width: 15em;
   gap: 1em;
   padding: 1em 0em;
 }
-.groupOption .option__group-primary__form__group {
+.groupOption-login .option__group-primary__form__group {
   display: grid;
   grid-template-columns: 1fr 2em;
 }
-.groupOption .option__group-primary__form__group .ver-senha {
+.groupOption-login .option__group-primary__form__group .ver-senha {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -568,25 +569,25 @@ body {
   font-size: 17px;
   border-radius: 0 5px 5px 0;
 }
-.groupOption .option__group-primary__form input[type=text] {
+.groupOption-login .option__group-primary__form input[type=text] {
   border-radius: 5px;
   border: 1px solid rgb(122, 122, 122);
 }
-.groupOption .option__group-primary__form input[type=text]:focus {
+.groupOption-login .option__group-primary__form input[type=text]:focus {
   padding-left: 10px;
   outline: none;
 }
-.groupOption .option__group-primary__form input[type=password] {
+.groupOption-login .option__group-primary__form input[type=password] {
   border-radius: 5px 0 0 5px;
   border-right: none;
   border: 1px solid rgb(122, 122, 122);
   border-right: none;
 }
-.groupOption .option__group-primary__form input[type=password]:focus {
+.groupOption-login .option__group-primary__form input[type=password]:focus {
   padding-left: 10px;
   outline: none;
 }
-.groupOption .option__group-primary__form button {
+.groupOption-login .option__group-primary__form button {
   padding: 7px 5px;
   border: none;
   background-color: #d71340;
@@ -596,25 +597,134 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.groupOption .option__group-primary__form button:hover {
+.groupOption-login .option__group-primary__form button:hover {
   background-color: rgb(191.5705128205, 16.9294871795, 57.0256410256);
 }
-.groupOption .option__group-secundary {
+.groupOption-login .option__group-secundary {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
 }
-.groupOption .option__group-secundary ul {
+.groupOption-login .option__group-secundary ul {
   list-style-type: none;
 }
-.groupOption .option__group-terciary {
+.groupOption-login .option__group-terciary {
   grid-column: 1/-1;
   border-top: 1px solid rgb(66, 66, 66);
   padding: 8px 0 0 0;
 }
 
-.groupOption .option__group-primary__form input[type=text], .groupOption .option__group-primary__form input[type=password] {
+.groupOption-cadastro {
+  background-color: rgba(0, 0, 0, 0.5019607843);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 1000000;
+}
+.groupOption-cadastro .option {
+  position: relative;
+  border-radius: 20px 20px 0px 0px;
+  background-color: white;
+  bottom: 0;
+  height: 60%;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: 6fr 1fr;
+  padding: 3em 2em 1em 2em;
+  animation: optionAnimationTOP 0.5s ease 0s 1 normal forwards;
+}
+@keyframes optionAnimationTOP {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.groupOption-cadastro .option .closed-option-cadastro {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 5px;
+  margin-right: 4px;
+  font-size: 1.5em;
+  color: #000000;
+}
+.groupOption-cadastro .option__group-primary__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 15em;
+  gap: 1em;
+  padding: 1em 0em;
+}
+.groupOption-cadastro .option__group-primary__form__group {
+  display: grid;
+  grid-template-columns: 1fr 2em;
+}
+.groupOption-cadastro .option__group-primary__form__group .ver-senha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(77, 77, 77);
+  border: 1px solid rgb(122, 122, 122);
+  border-left: none;
+  font-size: 17px;
+  border-radius: 0 5px 5px 0;
+}
+.groupOption-cadastro .option__group-primary__form input[type=text] {
+  border-radius: 5px;
+  border: 1px solid rgb(122, 122, 122);
+}
+.groupOption-cadastro .option__group-primary__form input[type=text]:focus {
+  padding-left: 10px;
+  outline: none;
+}
+.groupOption-cadastro .option__group-primary__form input[type=password] {
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+  border: 1px solid rgb(122, 122, 122);
+  border-right: none;
+}
+.groupOption-cadastro .option__group-primary__form input[type=password]:focus {
+  padding-left: 10px;
+  outline: none;
+}
+.groupOption-cadastro .option__group-primary__form button {
+  padding: 7px 5px;
+  border: none;
+  background-color: #d71340;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.groupOption-cadastro .option__group-primary__form button:hover {
+  background-color: rgb(191.5705128205, 16.9294871795, 57.0256410256);
+}
+.groupOption-cadastro .option__group-secundary {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.groupOption-cadastro .option__group-secundary ul {
+  list-style-type: none;
+}
+.groupOption-cadastro .option__group-terciary {
+  grid-column: 1/-1;
+  border-top: 1px solid rgb(66, 66, 66);
+  padding: 8px 0 0 0;
+}
+
+.groupOption-login .option__group-primary__form input[type=text], .groupOption-login .option__group-primary__form input[type=password], .groupOption-cadastro .option__group-primary__form input[type=text], .groupOption-cadastro .option__group-primary__form input[type=password] {
   font-size: 1em;
   transition: all 0.3s ease;
   padding: 5px;

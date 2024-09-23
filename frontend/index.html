@@ -7,13 +7,13 @@
   <title>Gerador de Senhas</title>
 </head>
 <body>
-  <div class="groupOption">
+  <div class="groupOption-login">
     <aside class="option">
-      <a href="" class="closed-option">
+      <a href="" class="closed-option-login">
         <i class="bi bi-x-circle"></i>
       </a>
       <div class="option__group-primary">
-        <p class="option__group-primary__title"></p>
+        <p class="option__group-primary__title-login"></p>
         <form class="option__group-primary__form">
           <input placeholder="Username" type="text" name="username" id="username">
           <div class="option__group-primary__form__group">
@@ -22,6 +22,40 @@
           </div>
           <small class="text-status-user">Insira seu usuário e sua senha acima</small>
           <button id="btn-entrar">Entrar</button>
+          <p>Ainda não tem conta? <a href="">Clique aqui</a></p>
+        </form>
+      </div>
+      <div class="option__group-secundary">
+        <div class="option__group-secundary__group">
+          <p>Social</p>
+          <ul>
+            <li>Facebook</li>
+            <li>Instagran</li>
+            <li>Youtube</li>
+            <li>Twiter</li>
+          </ul>
+        </div>
+      </div>
+      <div class="option__group-terciary">
+        © CodePass 2024
+      </div>
+    </aside>
+  </div>
+  <div class="groupOption-cadastro">
+    <aside class="option">
+      <a href="" class="closed-option-cadastro">
+        <i class="bi bi-x-circle"></i>
+      </a>
+      <div class="option__group-primary">
+        <p class="option__group-primary__title-cadastro"></p>
+        <form class="option__group-primary__form">
+          <input placeholder="Username" type="text" name="username" id="username-cadastro">
+          <div class="option__group-primary__form__group">
+            <input placeholder="Password" type="password" name="password" id="password-cadastro">
+          <a href="" class="ver-senha"><i class="bi bi-eye-slash"></i></a>
+          </div>
+          <small class="text-status-user-cadastro">Insira seu usuário e sua senha acima</small>
+          <button id="btn-register">Entrar</button>
           <p>Ainda não tem conta? <a href="">Clique aqui</a></p>
         </form>
       </div>
@@ -56,7 +90,7 @@
         <li class="nav__list-menu__item"><a href="">Uso</a></li>
         <li class="nav__list-menu__item"><a href="">Sobre</a></li>
         <li class="nav__list-menu__item"><a href="">Login</a></li>
-        <li class="nav__list-menu__item"><a href="">Cadastre-se</a>
+        <li class="nav__list-menu__item"><a class="item-login-register" href="">Cadastre-se</a>
         <li class="nav__list-menu__item"><a href=""><i class="bi bi-github"></i></a>
         </li>
       </ul>

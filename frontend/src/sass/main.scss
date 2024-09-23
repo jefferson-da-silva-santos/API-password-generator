@@ -593,7 +593,7 @@ body {
 
 //Option
 
-.groupOption {
+.groupOption-login {
   background-color: #00000080;
   position: absolute;
   top: 0;
@@ -627,7 +627,134 @@ body {
       }
     }
 
-    .closed-option {
+    .closed-option-login {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 5px;
+      margin-right: 4px;
+      font-size: 1.5em;
+      color: #000000;
+    }
+    &__group-primary {
+      &__form {
+        display: flex;
+        flex-direction: column;
+        max-width: 15em;
+        gap: 1em;
+        padding: 1em 0em;
+
+        &__group {
+          display: grid;
+          grid-template-columns: 1fr 2em;
+
+          .ver-senha {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(77, 77, 77);
+            border: 1px solid rgb(122, 122, 122);
+            border-left: none;
+            font-size: 17px;
+            border-radius: 0 5px 5px 0;
+          }
+        }
+
+        input[type="text"] {
+          @extend %estilos-input;
+          border-radius: 5px;
+          border: 1px solid rgb(122, 122, 122);
+
+          &:focus {
+            padding-left: 10px;
+            outline: none;
+          }
+        }
+
+        input[type="password"] {
+          @extend %estilos-input;
+          border-radius: 5px 0 0 5px;
+          border-right: none;
+          border: 1px solid rgb(122, 122, 122);
+          border-right: none;
+
+          &:focus {
+            padding-left: 10px;
+            outline: none;
+          }
+        }
+
+        button {
+          padding: 7px 5px;
+          border: none;
+          background-color: $cor-primaria;
+          border-radius: 5px;
+          color: white;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: darken($cor-primaria, 5%);
+          }
+        }
+      }
+    }
+
+    &__group-secundary {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+
+      ul {
+        list-style-type: none;
+      }
+    }
+
+    &__group-terciary {
+      grid-column: 1 / -1;
+      border-top: 1px solid rgb(66, 66, 66);
+      padding: 8px 0 0 0;
+    }
+  }
+}
+
+.groupOption-cadastro {
+  background-color: #00000080;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 1000000;
+
+  .option {
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
+    background-color: white;
+    bottom: 0;
+    height: 60%;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 6fr 1fr;
+    padding: 3em 2em 1em 2em;
+    animation: optionAnimationTOP 0.5s ease 0s 1 normal forwards;
+
+    @keyframes optionAnimationTOP {
+      0% {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .closed-option-cadastro {
       position: absolute;
       right: 0;
       top: 0;
