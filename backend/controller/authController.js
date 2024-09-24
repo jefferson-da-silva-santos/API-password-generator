@@ -91,6 +91,7 @@ export const authenticateJWT = (req, res, next) => {
     next();
   } catch (error) {
     logger.error(`Token inválido: ${error.message}`);
-    next();
+    return res.status(401).json({ error: 'Token inválido' });
   }
 };
+

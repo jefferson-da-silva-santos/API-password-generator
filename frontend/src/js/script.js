@@ -15,20 +15,22 @@ const selectTipoCaracteresSenha = document.getElementById('tipo-caracteres-senha
 const form = getElement('.main__form__group-form__form');
 //Status usuario
 const btnGerarSenha = document.getElementById('btnGerarSenha');
-//Option de Login
+//Option de Login visivel
 let optionLoginVisible = false;
-//Option de Cadastro
+//Option de Cadastro visivel
 let optionRegisterVisible = false;
-
+//Botão de copiar
+const btnCopy = getElement('.main__group-form__group-input__btn-copy');
 
 document.addEventListener('DOMContentLoaded', () => {
+  //criando e inicializando objetos de status do usuário no localstorage
   localStorage.setItem('userLogged', false);
   localStorage.setItem('userRegistered', false);
   localStorage.setItem('token', '');
 
-  //iniciar texto do select
+  //iniciar texto do select com o array
   selectTipoCaracteresSenha.innerHTML = htmlOptionsSelect[0];
-  
+
   //chamada da função de encher select
   fillSelectOptions(selectTipoCaracteresSenha);
 
@@ -36,22 +38,19 @@ document.addEventListener('DOMContentLoaded', () => {
   initValueInputRange();
 
   //chamada da função de prevenir o envio do formulário
-  preventSubmitForms(getElement('.main__form__group-form__form', true));
-  preventSubmitForms(getElement('.option__group-primary__form', true));
+  preventSubmitForms([
+    '.main__form__group-form__form',
+    '.option__group-primary__form'
+  ]);
 
   //Chamada da função de abrir e fechar menu
   openClosedMenu(btnMenu, listMenu);
 
-  //Logica para fechar o option de login
-  getElement('.closed-option-login').addEventListener('click', (event) => {
-    event.preventDefault();
-    closedOption('.groupOption-login');
-  });
-  getElement('.closed-option-cadastro').addEventListener('click', (event) => {
-    event.preventDefault();
-    closedOption('.groupOption-cadastro');
-  });
-
+  //Chamada para função de fechar os options
+  closeMultipleOptions([
+    { buttonSelector: '.closed-option-login', closeSelector: '.groupOption-login' },
+    { buttonSelector: '.closed-option-cadastro', closeSelector: '.groupOption-cadastro' }
+  ]);
 
   //Logica de gerar senha quando clicar no botao
   btnGerarSenha.addEventListener('click', async (event) => {
@@ -85,9 +84,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
+    validateData(username, password, '.text-status-user');
 
     try {
-      const token = await requestsUser('http://localhost:3000/auth/login', username, password);
+      const token = await requestsUser('http://localhost:3000/auth/login', username, password, 'Erro no login do usuário', '.text-status-user');
       if (token.error) {
         statusUser('Erro no login do usuário!', 'red', '.text-status-user');
         throw new Error('Erro na requisição');
@@ -103,25 +103,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  //Logica para abrir o option de cadastro pelo menu
-  getElement('.item-login-register').addEventListener('click', (event) => {
-    event.preventDefault();
-    showOption('Registre-se no CodePass', '.groupOption-cadastro');
-  });
-
-  //Logica para abrir o option de login pelo menu
-  getElement('.item-login-login').addEventListener('click', (event) => {
-    event.preventDefault();
-    showOption('Faça login', '.groupOption-login');
-  })
+  //Chamada para a função de abrir options pelo menu
+  openMultipleOptions([
+    { buttonSelector: '.item-login-register', message: 'Registre-se no CodePass', openSelector: '.groupOption-cadastro' },
+    { buttonSelector: '.item-login-login', message: 'Faça login', openSelector: '.groupOption-login' }
+  ]);
 
   //Logica de click
   document.getElementById('btn-register').addEventListener('click', async () => {
     const username = document.getElementById('username-cadastro').value;
     const password = document.getElementById('password-cadastro').value;
+    validateData(username, password, '.text-status-user-cadastro');
 
     try {
-      const result = await requestsUser('http://localhost:3000/auth/register', username, password);
+      const result = await requestsUser('http://localhost:3000/auth/register', username, password, 'Erro ao registrar usuário', '.text-status-user-cadastro');
 
       if (result.error) {
         statusUser('Erro no cadastro do usuário', 'red', '.text-status-user-cadastro');
@@ -132,53 +127,140 @@ document.addEventListener('DOMContentLoaded', () => {
       statusUser('Usuário registrado com sucesso!', 'green', '.text-status-user-cadastro');
     } catch (error) {
       statusUser('Erro no cadastro do usuário', 'red', '.text-status-user-cadastro');
-      throw new Error(`Erro no cadastro do usuário: ${error.message}`)
+      throw new Error(`Erro no cadastro do usuário: ${error.message}`);
     }
   });
 
-  getElement('.link-cadastro').addEventListener('click', (event) => {
-    event.preventDefault();
-    closedOption('.groupOption-login');
-    setTimeout(() => {
-      showOption('Registre-se no CodePass', '.groupOption-cadastro');
-    }, 500);
-  });
-
-  getElement('.link-login').addEventListener('click', (event) => {
-    event.preventDefault();
-    closedOption('.groupOption-cadastro');
-    setTimeout(() => {
-      showOption('Faça login', '.groupOption-login');
-    }, 500);
-  });
-
+  //Lógica para abrir options pelo link dos options
+  toggleMultipleOptions([
+    { linkSelector: '.link-cadastro', closeSelector: '.groupOption-login', message: 'Registre-se no CodePass', openSelector: '.groupOption-cadastro' },
+    { linkSelector: '.link-login', closeSelector: '.groupOption-cadastro', message: 'Faça login', openSelector: '.groupOption-login' }
+  ]);
 
   //Chamada da função de mostrar e ocultar senha
-  eventSeePassword('.ver-senha-login', 'password');
-  eventSeePassword('.ver-senha-cadastro', 'password-cadastro');
+  eventSeePassword([
+    { classBtn: '.ver-senha-login', idInput: 'password' },
+    { classBtn: '.ver-senha-cadastro', idInput: 'password-cadastro' }
+  ]);
+
+  //Chamada da função de ajustar a vizibilidade do menu de acordo com o tamanho da tela
+  adjustMenuOnResize();
+
+  //Lógica de copiar senha para a área de transferencia
+  btnCopy.addEventListener('click', event => {
+    event.preventDefault();
+
+    const text = document.getElementById('input-invalid').value;
+    const icon = btnCopy.firstChild;
+    navigator.clipboard.writeText(text).then(() => {
+      toogleClassIcon(btnCopy, icon, 'bi-copy', 'bi-check-circle-fill', '#57677a', 'green');
+    }).catch(err => {
+      toogleClassIcon(btnCopy, icon, 'bi-copy', 'bi-x-circle-fill', '#57677a', 'red');
+    });
+  });
 });
 
-//Função responsável por mostrar e ocultar a senha dos forms dos options com o click do usuário
-function eventSeePassword(classBtn, idInput) {
-  getElement(classBtn).addEventListener('click', (event) => {
-    event.preventDefault();
-    const input = document.getElementById(idInput);
-    if (input.classList.contains('hidden')) {
-      input.classList.remove('hidden');
-      input.classList.add('visible');
-      input.setAttribute('type', 'text');
+//Função que verifica se o token está inválido
+function handleApiError(status, errorMessage) {
+  if (status === 401) {
+    if (errorMessage.includes('Token inválido')) {
+      localStorage.setItem('token', '');
+      getElement('.nav__list-menu__item--login').style.display = 'list-item';
+      showOption('Faça login novamente', '.groupOption-login');
     } else {
-      input.classList.remove('visible');
-      input.classList.add('hidden');
-      input.setAttribute('type', 'password');
+      throw new Error('Acesso negado. Você não está autorizado a realizar essa ação.');
+    }
+  } else {
+    throw new Error('Ocorreu um erro: ' + errorMessage);
+  }
+}
+
+//Função responsável por alterar os icones quando algo for copiado para area de transferencia
+function toogleClassIcon(elementParent, element, classInit, newClasse, colorInit, newColor) {
+  element.classList.remove(classInit);
+  element.classList.add(newClasse);
+  elementParent.style.color = newColor;
+  setTimeout(() => {
+    element.classList.remove(newClasse);
+    element.classList.add(classInit);
+    elementParent.style.color = colorInit;
+  }, 2000);
+}
+
+//Função responsável por ajustar a vizibilidade do menu de acordo com o tamanho da tela
+function adjustMenuOnResize() {
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 769) {
+      listMenu.style.display = 'flex';
+      menuVisible = true;
+      document.body.style.overflow = 'auto';
+    } else {
+      menuVisible = false;
+      listMenu.style.display = 'none';
     }
   });
 }
 
+//Função responsável por abrir os options a partir do menu
+function openMultipleOptions(configs) {
+  configs.forEach(({ buttonSelector, message, openSelector }) => {
+    getElement(buttonSelector).addEventListener('click', (event) => {
+      event.preventDefault();
+      showOption(message, openSelector);
+    });
+  });
+}
+
+//Função responsável por trocar de option a partir do link do option atual
+function toggleMultipleOptions(configs) {
+  configs.forEach(({ linkSelector, closeSelector, message, openSelector }) => {
+    getElement(linkSelector).addEventListener('click', (event) => {
+      event.preventDefault();
+      closedOption(closeSelector);
+      setTimeout(() => {
+        showOption(message, openSelector);
+      }, 500);
+    });
+  });
+}
+
+//Função responsável por mostrar e ocultar a senha dos forms dos options com o click do usuário
+function eventSeePassword(elements) {
+  elements.forEach(({ classBtn, idInput }) => {
+    getElement(classBtn).addEventListener('click', (event) => {
+      event.preventDefault();
+      const input = document.getElementById(idInput);
+      if (input.classList.contains('hidden')) {
+        input.classList.remove('hidden');
+        input.classList.add('visible');
+        input.setAttribute('type', 'text');
+      } else {
+        input.classList.remove('visible');
+        input.classList.add('hidden');
+        input.setAttribute('type', 'password');
+      }
+    });
+  });
+}
+
+//Função para validar dados passados pelo usuário
+function validateData(username, password, classElement) {
+  if (typeof username !== 'string' || username.trim() === '' || !isNaN(username) ||
+    typeof password !== 'string' || password.trim() === '') {
+    statusUser('Credenciais inválidas', 'red', classElement);
+    console.error('Credenciais do usuário inválidas');
+    throw new Error('Credenciais do usuário inválidas')
+  }
+}
+
 //função responsável por escrever mensagem nos status do usuario login
 function statusUser(text, color, classElement) {
-  document.querySelector(classElement).textContent = text;
-  document.querySelector(classElement).style.color = color;
+  getElement(classElement).textContent = text;
+  getElement(classElement).style.color = color;
+  setTimeout(() => {
+    getElement(classElement).textContent = 'Insira seu usuário e sua senha acima';
+    getElement(classElement).style.color = 'black';
+  }, 5000);
 }
 
 //função para criar senha
@@ -195,7 +277,9 @@ async function createPassword(objectSenha, token) {
     });
 
     if (!response.ok) {
-      throw new Error('Erro na requisição');
+      const errorData = await response.json();
+      handleApiError(response.status, errorData.error);
+      return;
     }
 
     const data = await response.json();
@@ -205,6 +289,7 @@ async function createPassword(objectSenha, token) {
   }
 }
 
+//Função genérica usada para ocultar um elemento
 function hideElement(classElement) {
   getElement(classElement).style.display = 'none';
 }
@@ -218,11 +303,25 @@ function openClosedMenu(btn, menu) {
   });
 }
 
+
 //função para submeter o formulário
-function preventSubmitForms(forms) {
-  forms.forEach(form => {
-    form.addEventListener('submit', event => {
+function preventSubmitForms(formsArray) {
+  formsArray.forEach(selector => {
+    const forms = getElement(selector, true);
+    forms.forEach(form => {
+      form.addEventListener('submit', event => {
+        event.preventDefault();
+      });
+    });
+  });
+}
+
+//Função responsável por fechar options com o click
+function closeMultipleOptions(configs) {
+  configs.forEach(({ buttonSelector, closeSelector }) => {
+    getElement(buttonSelector).addEventListener('click', (event) => {
       event.preventDefault();
+      closedOption(closeSelector);
     });
   });
 }
@@ -266,7 +365,7 @@ function fillSelectOptions(element) {
 //Função responsável por fazer requests de registro e login para a API
 //'http://localhost:3000/auth/login'
 // 'http://localhost:3000/auth/register'
-async function requestsUser(url, username, password) {
+async function requestsUser(url, username, password, msgError, classMensagem) {
   try {
     const response = await fetch(url, {
       method: 'POST',
@@ -280,11 +379,13 @@ async function requestsUser(url, username, password) {
     });
 
     if (!response.ok) {
+      statusUser('Erro na requizição!', 'red', classMensagem);
       throw new Error(`Erro na requisição: ${response.status} - ${response.statusText}`);
     }
     const data = await response.json();
     return data;
   } catch (error) {
+    statusUser(msgError, 'red', classMensagem);
     console.error(error.message);
     throw new Error('Erro ao registrar usuário');
   }
@@ -318,16 +419,16 @@ function showOption(text, classOption) {
 
   document.body.style.overflow = 'hidden';
   setTimeout(() => {
-    document.querySelector(classOption).style.display = 'flex';
-    document.querySelector(classText).textContent = text;
+    getElement(classOption).style.display = 'flex';
+    getElement(classText).textContent = text;
   }, 500);
 }
 
 //função responsável por fechar o option
 function closedOption(classOption) {
-  document.querySelector(classOption).style.display = 'none';
+  hideElement(classOption);
   document.body.style.overflow = 'auto';
-  
+
   if (classOption === '.groupOption-login') {
     optionLoginVisible = toogleVisibility(optionLoginVisible);
   } else if (classOption === '.groupOption-cadastro') {
