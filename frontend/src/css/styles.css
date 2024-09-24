@@ -140,6 +140,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  width: 100%;
 }
 .main .separator {
   position: relative;
@@ -753,6 +754,21 @@ body {
   font-size: 1em;
   transition: all 0.3s ease;
   padding: 5px;
+}
+
+#input-password-personalized {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1em;
+  border: 1px solid rgb(133, 133, 133);
+  box-shadow: inset 0px 0px 5px rgba(128, 128, 128, 0.576);
+}
+#input-password-personalized:focus {
+  outline: none;
+  border: 1px solid black;
+}
+#input-password-personalized::placeholder {
+  font-size: 1em;
 }
 
 /*# sourceMappingURL=styles.css.map */
