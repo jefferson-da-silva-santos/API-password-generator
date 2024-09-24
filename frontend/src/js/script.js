@@ -156,6 +156,23 @@ document.addEventListener('DOMContentLoaded', () => {
       toogleClassIcon(btnCopy, icon, 'bi-copy', 'bi-check-circle-fill', '#57677a', 'green');
     }).catch(err => {
       toogleClassIcon(btnCopy, icon, 'bi-copy', 'bi-x-circle-fill', '#57677a', 'red');
+      console.log('Erro ao copiar para area de transfência: ' + err.message);
+    });
+  });
+
+
+  //Logica para fechar o menu quando o o usuário clica em um item dele 
+  getElement('.nav__list-menu__item', true).forEach(itemMenu => {
+    itemMenu.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      if (window.innerWidth < 769) {
+        listMenu.style.display = 'none';
+        menuVisible = false;
+        if (!optionLoginVisible && !optionRegisterVisible) {
+          document.body.style.overflow = 'auto';
+        }
+      }
     });
   });
 });

@@ -5063,3 +5063,4 @@
 {"level":"info","message":"Senha salva com sucesso: ASM268[(MX","timestamp":"2024-09-24T16:50:52.994Z"}
 {"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-24T16:50:52.994Z"}
 {"level":"info","message":"::1 - - [24/Sep/2024:16:50:52 +0000] \"GET /password/complex/10/minusculas%20maiusculas%20numeros%20e%20caracteres%20especiais HTTP/1.1\" 200 99 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:52.996Z"}
+{"level":"info","message":"A API subiu com sucesso na porta 3000.","timestamp":"2024-09-24T17:38:07.020Z"}
