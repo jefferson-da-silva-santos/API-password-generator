@@ -21,6 +21,8 @@ let optionLoginVisible = false;
 let optionRegisterVisible = false;
 //Botão de copiar
 const btnCopy = getElement('.main__group-form__group-input__btn-copy');
+// Input senha personalizada
+let inputPasswordPersoVisible = false;
 
 document.addEventListener('DOMContentLoaded', () => {
   //criando e inicializando objetos de status do usuário no localstorage
@@ -31,8 +33,17 @@ document.addEventListener('DOMContentLoaded', () => {
   //iniciar texto do select com o array
   selectTipoCaracteresSenha.innerHTML = htmlOptionsSelect[0];
 
+  //Logica para remover o input de senha personalizada
+  selectTipoSenha.addEventListener('change', () => {
+    const textOptionSelect = selectTipoSenha.value;
+    if (textOptionSelect !== 'personalized') {
+      hiddeInputPasswordPersonalized();
+    }
+    fillSelectOptions(textOptionSelect);
+  });
+
   //chamada da função de encher select
-  fillSelectOptions(selectTipoCaracteresSenha);
+  fillSelectOptions();
 
   //chamada da função de iniciar o valor do input range
   initValueInputRange();
@@ -56,16 +67,24 @@ document.addEventListener('DOMContentLoaded', () => {
   btnGerarSenha.addEventListener('click', async (event) => {
     event.preventDefault();
 
-    const objectSenha = {
-      type: document.getElementById('tipo-senha').value,
-      length: document.getElementById('input-range').value,
-      variation: document.getElementById('tipo-caracteres-senha').value
-    }
-
     try {
       if (localStorage.getItem('userLogged') === 'true') {
         const token = localStorage.getItem('token');
-        const senhaCriada = await createPassword(objectSenha, token);
+        let senhaCriada = '';
+        const typeSenha = document.getElementById('tipo-senha').value
+
+        if (typeSenha === 'personalized') {
+          const caracteres = document.getElementById('input-password-personalized').value;
+          console.log(caracteres);
+          const length = document.getElementById('input-range').value;
+          senhaCriada = await createPasswordPersonalized(length, token, caracteres);
+        } else {
+          senhaCriada = await createPassword({
+            type: document.getElementById('tipo-senha').value,
+            length: document.getElementById('input-range').value,
+            variation: document.getElementById('tipo-caracteres-senha').value
+          }, token);
+        }
 
         if (senhaCriada.error) {
           throw new Error(`Erro na requisição: ${error}`);
@@ -80,6 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  //Lógica de logar e registra usuários
   document.getElementById('btn-entrar').addEventListener('click', async () => {
 
     const username = document.getElementById('username').value;
@@ -96,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('token', token.token);
       toogleUserLocalStorage('userLogged');
       hideElement('.nav__list-menu__item--login');
+      hideElement('.nav__list-menu__item--cadastro');
       statusUser('Usuário logado com sucesso!', 'green', '.text-status-user');
     } catch (error) {
       statusUser('Erro no login do usuário!', 'red');
@@ -266,7 +287,6 @@ function statusUser(text, color, classElement) {
 //função para criar senha
 async function createPassword(objectSenha, token) {
   const { type, length, variation } = objectSenha;
-
   try {
     const response = await fetch(`http://localhost:3000/password/${type}/${length}/${variation}`, {
       method: 'GET',
@@ -274,6 +294,32 @@ async function createPassword(objectSenha, token) {
         'Authorization': token,
         'Content-Type': 'application/json'
       }
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json();
+      handleApiError(response.status, errorData.error);
+      return;
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    throw new Error('Erro na requisição');
+  }
+}
+
+async function createPasswordPersonalized(length, token, characters) {
+  try {
+    const response = await fetch(`http://localhost:3000/password/personalized/${length}/personalizada`, {
+      method: 'POST',
+      headers: {
+        'Authorization': token,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        characters: characters
+      })
     });
 
     if (!response.ok) {
@@ -342,11 +388,13 @@ function updateValueRange() {
 
 /*Função responsável por preencher o select com options do array 'htmlOptionsSelect'
 de acordo com o tipo de senha escolhido pelo usuário */
-function fillSelectOptions(element) {
+function fillSelectOptions() {
+  const element = document.getElementById('tipo-caracteres-senha');
   selectTipoSenha.addEventListener('change', () => {
     const textOptionSelect = selectTipoSenha.value;
     switch (textOptionSelect) {
       case 'simple':
+        hiddeInputPasswordPersonalized();
         element.innerHTML = htmlOptionsSelect[0];
         break;
       case 'alphanumeric':
@@ -356,10 +404,34 @@ function fillSelectOptions(element) {
         element.innerHTML = htmlOptionsSelect[2];
         break;
       case 'personalized':
+        createInputPasswordPersonalized();
         break;
     }
   });
 }
+
+function hiddeInputPasswordPersonalized() {
+  if (inputPasswordPersoVisible) {
+    const input = document.getElementById('input-password-personalized');
+    input.remove();
+    document.getElementById('tipo-caracteres-senha').style.display = 'inline-block';
+    inputPasswordPersoVisible = toogleVisibility(inputPasswordPersoVisible);
+  }
+}
+
+function createInputPasswordPersonalized() {
+  if (!inputPasswordPersoVisible) {
+    const inputText = document.createElement('input');
+    inputText.setAttribute('type', 'text');
+    inputText.setAttribute('id', 'input-password-personalized');
+    inputText.setAttribute('placeholder', 'Caracteres desejados na senha');
+    inputText.classList.add(('input-personalized'));
+    document.getElementById('tipo-caracteres-senha').style.display = 'none';
+    getElement('.group-selects__group--personalized').appendChild(inputText);
+    inputPasswordPersoVisible = toogleVisibility(inputPasswordPersoVisible);
+  }
+}
+
 
 //Função responsável por fazer requests de registro e login para a API
 //'http://localhost:3000/auth/login'
