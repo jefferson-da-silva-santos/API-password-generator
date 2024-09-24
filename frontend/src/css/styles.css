@@ -441,7 +441,8 @@ body {
     margin-top: 1em;
   }
   .main .select2 {
-    max-width: 100%;
+    max-width: 25em;
+    width: 100%;
   }
 }
 @media screen and (max-width: 484px) {
@@ -496,6 +497,27 @@ body {
     row-gap: 1em;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 5em 1fr 1fr 1fr 1fr 1fr 13em;
+  }
+  #option-login,
+  #option-cadastro {
+    grid-template-columns: 1fr;
+  }
+  #secundary-option-login,
+  #secundary-option-cadastro {
+    display: none;
+  }
+  .option__group-primary {
+    flex-direction: column;
+  }
+  .groupOption-login .option__group-primary__form,
+  .groupOption-cadastro .option__group-primary__form {
+    margin: auto;
+  }
+  .option__group-primary__title-login,
+  .option__group-primary__title-cadastro {
+    max-width: 15em;
+    width: 100%;
+    margin: auto;
   }
 }
 @media screen and (max-width: 400px) {
@@ -689,13 +711,13 @@ body {
   padding-left: 10px;
   outline: none;
 }
-.groupOption-cadastro .option__group-primary__form input[type=password] {
+.groupOption-cadastro .option__group-primary__form #password-cadastro {
   border-radius: 5px 0 0 5px;
   border-right: none;
   border: 1px solid rgb(122, 122, 122);
   border-right: none;
 }
-.groupOption-cadastro .option__group-primary__form input[type=password]:focus {
+.groupOption-cadastro .option__group-primary__form #password-cadastro:focus {
   padding-left: 10px;
   outline: none;
 }
@@ -727,7 +749,7 @@ body {
   padding: 8px 0 0 0;
 }
 
-.groupOption-login .option__group-primary__form input[type=text], .groupOption-login .option__group-primary__form #password, .groupOption-cadastro .option__group-primary__form input[type=text], .groupOption-cadastro .option__group-primary__form input[type=password] {
+.groupOption-login .option__group-primary__form input[type=text], .groupOption-login .option__group-primary__form #password, .groupOption-cadastro .option__group-primary__form input[type=text], .groupOption-cadastro .option__group-primary__form #password-cadastro {
   font-size: 1em;
   transition: all 0.3s ease;
   padding: 5px;

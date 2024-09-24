@@ -303,7 +303,6 @@ function openClosedMenu(btn, menu) {
   });
 }
 
-
 //função para submeter o formulário
 function preventSubmitForms(formsArray) {
   formsArray.forEach(selector => {

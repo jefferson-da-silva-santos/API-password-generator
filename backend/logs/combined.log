@@ -4570,3 +4570,496 @@
 {"level":"info","message":"::1 - - [24/Sep/2024:14:28:03 +0000] \"OPTIONS /password/simple/4/maiusculas HTTP/1.1\" 204 0 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T14:28:03.343Z"}
 {"level":"error","message":"Token inválido: jwt expired","timestamp":"2024-09-24T14:28:03.347Z"}
 {"level":"info","message":"::1 - - [24/Sep/2024:14:28:03 +0000] \"GET /password/simple/4/maiusculas HTTP/1.1\" 401 27 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T14:28:03.348Z"}
+{"level":"info","message":"A API subiu com sucesso na porta 3000.","timestamp":"2024-09-24T16:46:12.763Z"}
+{"level":"info","message":"A API subiu com sucesso na porta 3000.","timestamp":"2024-09-24T16:46:14.541Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:48:10 +0000] \"OPTIONS /auth/register HTTP/1.1\" 204 0 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:48:10.315Z"}
+{"level":"info","message":"A API subiu com sucesso na porta 3000.","timestamp":"2024-09-24T16:48:13.050Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:49:21 +0000] \"OPTIONS /auth/register HTTP/1.1\" 204 0 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:49:21.132Z"}
+{"level":"info","message":"Usuário não encontrado: jessica","timestamp":"2024-09-24T16:49:21.710Z"}
+{"level":"info","message":"Usuário salvo com sucesso: jessica","timestamp":"2024-09-24T16:49:21.717Z"}
+{"level":"info","message":"Usuário registrado com sucesso: jessica","timestamp":"2024-09-24T16:49:21.718Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:49:21 +0000] \"POST /auth/register HTTP/1.1\" 201 29 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:49:21.727Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:49:39 +0000] \"OPTIONS /auth/login HTTP/1.1\" 204 0 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:49:39.141Z"}
+{"level":"info","message":"Usuário encontrado: jessica","timestamp":"2024-09-24T16:49:39.375Z"}
+{"level":"info","message":"Login bem-sucedido para o usuário: jessica","timestamp":"2024-09-24T16:49:39.553Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:49:39 +0000] \"POST /auth/login HTTP/1.1\" 200 168 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:49:39.554Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:49:57 +0000] \"OPTIONS /password/alphanumeric/10/minusculas%20e%20numeros HTTP/1.1\" 204 0 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:49:57.487Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jessica","timestamp":"2024-09-24T16:49:57.497Z"}
+{"level":"info","message":"Senha criada: s0jt7c0cg5","timestamp":"2024-09-24T16:49:57.508Z"}
+{"level":"info","message":"Validando senha gerada: s0jt7c0cg5","timestamp":"2024-09-24T16:49:57.509Z"}
+{"level":"info","message":"Senha criada: R08PH7XETQ","timestamp":"2024-09-24T16:49:57.511Z"}
+{"level":"info","message":"Validando senha gerada: R08PH7XETQ","timestamp":"2024-09-24T16:49:57.511Z"}
+{"level":"info","message":"Senha criada: epuIujkTUp","timestamp":"2024-09-24T16:49:57.512Z"}
+{"level":"info","message":"Validando senha gerada: epuIujkTUp","timestamp":"2024-09-24T16:49:57.512Z"}
+{"level":"info","message":"Senha criada: h9u59O641Q","timestamp":"2024-09-24T16:49:57.513Z"}
+{"level":"info","message":"Validando senha gerada: h9u59O641Q","timestamp":"2024-09-24T16:49:57.514Z"}
+{"level":"info","message":"Gerando senha do tipo: minusculas e numeros","timestamp":"2024-09-24T16:49:57.515Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:49:57.760Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:49:57.761Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:49:57.814Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: s0jt7c0cg5","timestamp":"2024-09-24T16:49:57.815Z"}
+{"level":"info","message":"Senha com letras minúsculas e números criada com sucesso.","timestamp":"2024-09-24T16:49:57.816Z"}
+{"level":"info","message":"Senha salva com sucesso: s0jt7c0cg5","timestamp":"2024-09-24T16:49:57.823Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-24T16:49:57.823Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:49:57 +0000] \"GET /password/alphanumeric/10/minusculas%20e%20numeros HTTP/1.1\" 200 67 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:49:57.826Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:49:57.932Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:49:57.932Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:49:57.942Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: R08PH7XETQ","timestamp":"2024-09-24T16:49:57.942Z"}
+{"level":"info","message":"Senha com letras maiúsculas e números criada com sucesso.","timestamp":"2024-09-24T16:49:57.943Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:49:58.068Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:49:58.069Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:49:58.078Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: epuIujkTUp","timestamp":"2024-09-24T16:49:58.078Z"}
+{"level":"info","message":"Senha com letras maiúsculas e minúsculas criada com sucesso.","timestamp":"2024-09-24T16:49:58.079Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:49:58.259Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:49:58.259Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:49:58.269Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: h9u59O641Q","timestamp":"2024-09-24T16:49:58.269Z"}
+{"level":"info","message":"Senha com letras maiúsculas, minúsculas e numeros criada com sucesso.","timestamp":"2024-09-24T16:49:58.270Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jessica","timestamp":"2024-09-24T16:49:58.976Z"}
+{"level":"info","message":"Senha criada: icasg4538a","timestamp":"2024-09-24T16:49:58.978Z"}
+{"level":"info","message":"Validando senha gerada: icasg4538a","timestamp":"2024-09-24T16:49:58.978Z"}
+{"level":"info","message":"Senha criada: O3NEYMJCPA","timestamp":"2024-09-24T16:49:58.979Z"}
+{"level":"info","message":"Validando senha gerada: O3NEYMJCPA","timestamp":"2024-09-24T16:49:58.980Z"}
+{"level":"info","message":"Senha criada: aHKrhspYct","timestamp":"2024-09-24T16:49:58.980Z"}
+{"level":"info","message":"Validando senha gerada: aHKrhspYct","timestamp":"2024-09-24T16:49:58.981Z"}
+{"level":"info","message":"Senha criada: 6r7J7tOGu7","timestamp":"2024-09-24T16:49:58.981Z"}
+{"level":"info","message":"Validando senha gerada: 6r7J7tOGu7","timestamp":"2024-09-24T16:49:58.982Z"}
+{"level":"info","message":"Gerando senha do tipo: minusculas e numeros","timestamp":"2024-09-24T16:49:58.983Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:49:58.988Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:49:58.989Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:49:58.990Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:49:58.990Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:49:58.991Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:49:58.992Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:49:58.996Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:49:58.996Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:49:59.004Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: icasg4538a","timestamp":"2024-09-24T16:49:59.005Z"}
+{"level":"info","message":"Senha com letras minúsculas e números criada com sucesso.","timestamp":"2024-09-24T16:49:59.005Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:49:59.006Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: O3NEYMJCPA","timestamp":"2024-09-24T16:49:59.006Z"}
+{"level":"info","message":"Senha com letras maiúsculas e números criada com sucesso.","timestamp":"2024-09-24T16:49:59.006Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:49:59.007Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: aHKrhspYct","timestamp":"2024-09-24T16:49:59.008Z"}
+{"level":"info","message":"Senha com letras maiúsculas e minúsculas criada com sucesso.","timestamp":"2024-09-24T16:49:59.008Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:49:59.010Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: 6r7J7tOGu7","timestamp":"2024-09-24T16:49:59.010Z"}
+{"level":"info","message":"Senha com letras maiúsculas, minúsculas e numeros criada com sucesso.","timestamp":"2024-09-24T16:49:59.010Z"}
+{"level":"info","message":"Senha salva com sucesso: icasg4538a","timestamp":"2024-09-24T16:49:59.012Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-24T16:49:59.012Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:49:59 +0000] \"GET /password/alphanumeric/10/minusculas%20e%20numeros HTTP/1.1\" 200 67 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:49:59.014Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jessica","timestamp":"2024-09-24T16:49:59.708Z"}
+{"level":"info","message":"Senha criada: szqag1k0p5","timestamp":"2024-09-24T16:49:59.709Z"}
+{"level":"info","message":"Validando senha gerada: szqag1k0p5","timestamp":"2024-09-24T16:49:59.709Z"}
+{"level":"info","message":"Senha criada: MXM7ETS2DZ","timestamp":"2024-09-24T16:49:59.710Z"}
+{"level":"info","message":"Validando senha gerada: MXM7ETS2DZ","timestamp":"2024-09-24T16:49:59.710Z"}
+{"level":"info","message":"Senha criada: RpjAXhGOuO","timestamp":"2024-09-24T16:49:59.711Z"}
+{"level":"info","message":"Validando senha gerada: RpjAXhGOuO","timestamp":"2024-09-24T16:49:59.711Z"}
+{"level":"info","message":"Senha criada: 7pIU38D1W8","timestamp":"2024-09-24T16:49:59.712Z"}
+{"level":"info","message":"Validando senha gerada: 7pIU38D1W8","timestamp":"2024-09-24T16:49:59.712Z"}
+{"level":"info","message":"Gerando senha do tipo: minusculas e numeros","timestamp":"2024-09-24T16:49:59.713Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:00.089Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:00.090Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:00.094Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:00.095Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:00.101Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: RpjAXhGOuO","timestamp":"2024-09-24T16:50:00.102Z"}
+{"level":"info","message":"Senha com letras maiúsculas e minúsculas criada com sucesso.","timestamp":"2024-09-24T16:50:00.102Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:00.103Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:00.103Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:00.104Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:00.105Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:00.106Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: szqag1k0p5","timestamp":"2024-09-24T16:50:00.107Z"}
+{"level":"info","message":"Senha com letras minúsculas e números criada com sucesso.","timestamp":"2024-09-24T16:50:00.107Z"}
+{"level":"info","message":"Senha salva com sucesso: szqag1k0p5","timestamp":"2024-09-24T16:50:00.110Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-24T16:50:00.110Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:50:00 +0000] \"GET /password/alphanumeric/10/minusculas%20e%20numeros HTTP/1.1\" 200 67 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:00.112Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:00.114Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: 7pIU38D1W8","timestamp":"2024-09-24T16:50:00.114Z"}
+{"level":"info","message":"Senha com letras maiúsculas, minúsculas e numeros criada com sucesso.","timestamp":"2024-09-24T16:50:00.115Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:00.116Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: MXM7ETS2DZ","timestamp":"2024-09-24T16:50:00.116Z"}
+{"level":"info","message":"Senha com letras maiúsculas e números criada com sucesso.","timestamp":"2024-09-24T16:50:00.117Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jessica","timestamp":"2024-09-24T16:50:00.335Z"}
+{"level":"info","message":"Senha criada: 5zfzdr0iqy","timestamp":"2024-09-24T16:50:00.336Z"}
+{"level":"info","message":"Validando senha gerada: 5zfzdr0iqy","timestamp":"2024-09-24T16:50:00.336Z"}
+{"level":"info","message":"Senha criada: 13R1ZDHTSP","timestamp":"2024-09-24T16:50:00.337Z"}
+{"level":"info","message":"Validando senha gerada: 13R1ZDHTSP","timestamp":"2024-09-24T16:50:00.338Z"}
+{"level":"info","message":"Senha criada: xWoMJqVzfi","timestamp":"2024-09-24T16:50:00.338Z"}
+{"level":"info","message":"Validando senha gerada: xWoMJqVzfi","timestamp":"2024-09-24T16:50:00.339Z"}
+{"level":"info","message":"Senha criada: I252n0Mbs6","timestamp":"2024-09-24T16:50:00.339Z"}
+{"level":"info","message":"Validando senha gerada: I252n0Mbs6","timestamp":"2024-09-24T16:50:00.340Z"}
+{"level":"info","message":"Gerando senha do tipo: minusculas e numeros","timestamp":"2024-09-24T16:50:00.340Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:00.342Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:00.343Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:00.343Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:00.344Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:00.344Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:00.344Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:00.345Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:00.345Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:00.354Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: 5zfzdr0iqy","timestamp":"2024-09-24T16:50:00.354Z"}
+{"level":"info","message":"Senha com letras minúsculas e números criada com sucesso.","timestamp":"2024-09-24T16:50:00.355Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:00.355Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: 13R1ZDHTSP","timestamp":"2024-09-24T16:50:00.356Z"}
+{"level":"info","message":"Senha com letras maiúsculas e números criada com sucesso.","timestamp":"2024-09-24T16:50:00.356Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:00.357Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: xWoMJqVzfi","timestamp":"2024-09-24T16:50:00.357Z"}
+{"level":"info","message":"Senha com letras maiúsculas e minúsculas criada com sucesso.","timestamp":"2024-09-24T16:50:00.358Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:00.359Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: I252n0Mbs6","timestamp":"2024-09-24T16:50:00.359Z"}
+{"level":"info","message":"Senha com letras maiúsculas, minúsculas e numeros criada com sucesso.","timestamp":"2024-09-24T16:50:00.360Z"}
+{"level":"info","message":"Senha salva com sucesso: 5zfzdr0iqy","timestamp":"2024-09-24T16:50:00.361Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-24T16:50:00.361Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:50:00 +0000] \"GET /password/alphanumeric/10/minusculas%20e%20numeros HTTP/1.1\" 200 67 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:00.363Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:50:03 +0000] \"OPTIONS /password/alphanumeric/42/minusculas%20e%20numeros HTTP/1.1\" 204 0 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:03.434Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jessica","timestamp":"2024-09-24T16:50:03.438Z"}
+{"level":"info","message":"Senha criada: 6gp8sdm04k6r5l5do2jtkc1lro2osupz57phbxu5az","timestamp":"2024-09-24T16:50:03.439Z"}
+{"level":"info","message":"Validando senha gerada: 6gp8sdm04k6r5l5do2jtkc1lro2osupz57phbxu5az","timestamp":"2024-09-24T16:50:03.440Z"}
+{"level":"info","message":"Senha criada: U6Z7Y85JHGY0GG4YED5NGVK7NQUJR24SCFWZH3QVZS","timestamp":"2024-09-24T16:50:03.440Z"}
+{"level":"info","message":"Validando senha gerada: U6Z7Y85JHGY0GG4YED5NGVK7NQUJR24SCFWZH3QVZS","timestamp":"2024-09-24T16:50:03.441Z"}
+{"level":"info","message":"Senha criada: GxyiviwxgVxfudHCAWSgBycrqtCmcsNvCOypJdNSrh","timestamp":"2024-09-24T16:50:03.441Z"}
+{"level":"info","message":"Validando senha gerada: GxyiviwxgVxfudHCAWSgBycrqtCmcsNvCOypJdNSrh","timestamp":"2024-09-24T16:50:03.442Z"}
+{"level":"info","message":"Senha criada: 56mR9adyKgKAzE3sTFT103o8578iBr75NW7AqHso88","timestamp":"2024-09-24T16:50:03.442Z"}
+{"level":"info","message":"Validando senha gerada: 56mR9adyKgKAzE3sTFT103o8578iBr75NW7AqHso88","timestamp":"2024-09-24T16:50:03.443Z"}
+{"level":"info","message":"Gerando senha do tipo: minusculas e numeros","timestamp":"2024-09-24T16:50:03.443Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:03.446Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:03.448Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:03.449Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:03.456Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:03.460Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:03.462Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:03.464Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:03.471Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:03.471Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: 6gp8sdm04k6r5l5do2jtkc1lro2osupz57phbxu5az","timestamp":"2024-09-24T16:50:03.474Z"}
+{"level":"info","message":"Senha com letras minúsculas e números criada com sucesso.","timestamp":"2024-09-24T16:50:03.475Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:03.475Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: U6Z7Y85JHGY0GG4YED5NGVK7NQUJR24SCFWZH3QVZS","timestamp":"2024-09-24T16:50:03.476Z"}
+{"level":"info","message":"Senha com letras maiúsculas e números criada com sucesso.","timestamp":"2024-09-24T16:50:03.476Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:03.477Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: GxyiviwxgVxfudHCAWSgBycrqtCmcsNvCOypJdNSrh","timestamp":"2024-09-24T16:50:03.477Z"}
+{"level":"info","message":"Senha com letras maiúsculas e minúsculas criada com sucesso.","timestamp":"2024-09-24T16:50:03.477Z"}
+{"level":"info","message":"Senha salva com sucesso: 6gp8sdm04k6r5l5do2jtkc1lro2osupz57phbxu5az","timestamp":"2024-09-24T16:50:03.479Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-24T16:50:03.479Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:50:03 +0000] \"GET /password/alphanumeric/42/minusculas%20e%20numeros HTTP/1.1\" 200 99 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:03.480Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:03.481Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: 56mR9adyKgKAzE3sTFT103o8578iBr75NW7AqHso88","timestamp":"2024-09-24T16:50:03.481Z"}
+{"level":"info","message":"Senha com letras maiúsculas, minúsculas e numeros criada com sucesso.","timestamp":"2024-09-24T16:50:03.481Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jessica","timestamp":"2024-09-24T16:50:07.509Z"}
+{"level":"info","message":"Senha criada: 5symtrvmoo15njjrtkk3020rm0c0a8vyon3zzunrz6","timestamp":"2024-09-24T16:50:07.511Z"}
+{"level":"info","message":"Validando senha gerada: 5symtrvmoo15njjrtkk3020rm0c0a8vyon3zzunrz6","timestamp":"2024-09-24T16:50:07.512Z"}
+{"level":"info","message":"Senha criada: BK54FV0LBP3OV21ZVS4DIIQMD4R86EC0B1E803VTSL","timestamp":"2024-09-24T16:50:07.512Z"}
+{"level":"info","message":"Validando senha gerada: BK54FV0LBP3OV21ZVS4DIIQMD4R86EC0B1E803VTSL","timestamp":"2024-09-24T16:50:07.513Z"}
+{"level":"info","message":"Senha criada: UAYKhXLfKTLlpRqVrYQJhWgWMpNCDyEEKrsSYUvkSV","timestamp":"2024-09-24T16:50:07.513Z"}
+{"level":"info","message":"Validando senha gerada: UAYKhXLfKTLlpRqVrYQJhWgWMpNCDyEEKrsSYUvkSV","timestamp":"2024-09-24T16:50:07.514Z"}
+{"level":"info","message":"Senha criada: x2K34Vwww47L56N222496zi0268A66tM0Q6Eik5u5P","timestamp":"2024-09-24T16:50:07.515Z"}
+{"level":"info","message":"Validando senha gerada: x2K34Vwww47L56N222496zi0268A66tM0Q6Eik5u5P","timestamp":"2024-09-24T16:50:07.516Z"}
+{"level":"warn","message":"Senha inválida gerada: x2K34Vwww47L56N222496zi0268A66tM0Q6Eik5u5P","timestamp":"2024-09-24T16:50:07.517Z"}
+{"level":"info","message":"Senha criada: zJ6Mga5A8GXeWhpQXrMVH074yXQAL6rqBWmKa90W33","timestamp":"2024-09-24T16:50:07.517Z"}
+{"level":"info","message":"Validando senha gerada: zJ6Mga5A8GXeWhpQXrMVH074yXQAL6rqBWmKa90W33","timestamp":"2024-09-24T16:50:07.517Z"}
+{"level":"info","message":"Gerando senha do tipo: minusculas e numeros","timestamp":"2024-09-24T16:50:07.518Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:07.523Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:07.523Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:07.524Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:07.532Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:07.533Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:07.539Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:07.546Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:07.558Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:07.559Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: 5symtrvmoo15njjrtkk3020rm0c0a8vyon3zzunrz6","timestamp":"2024-09-24T16:50:07.559Z"}
+{"level":"info","message":"Senha com letras minúsculas e números criada com sucesso.","timestamp":"2024-09-24T16:50:07.559Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:07.560Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: BK54FV0LBP3OV21ZVS4DIIQMD4R86EC0B1E803VTSL","timestamp":"2024-09-24T16:50:07.560Z"}
+{"level":"info","message":"Senha com letras maiúsculas e números criada com sucesso.","timestamp":"2024-09-24T16:50:07.560Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:07.561Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: UAYKhXLfKTLlpRqVrYQJhWgWMpNCDyEEKrsSYUvkSV","timestamp":"2024-09-24T16:50:07.561Z"}
+{"level":"info","message":"Senha com letras maiúsculas e minúsculas criada com sucesso.","timestamp":"2024-09-24T16:50:07.561Z"}
+{"level":"info","message":"Senha salva com sucesso: 5symtrvmoo15njjrtkk3020rm0c0a8vyon3zzunrz6","timestamp":"2024-09-24T16:50:07.563Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-24T16:50:07.563Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:50:07 +0000] \"GET /password/alphanumeric/42/minusculas%20e%20numeros HTTP/1.1\" 200 99 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:07.564Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:07.568Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: zJ6Mga5A8GXeWhpQXrMVH074yXQAL6rqBWmKa90W33","timestamp":"2024-09-24T16:50:07.574Z"}
+{"level":"info","message":"Senha com letras maiúsculas, minúsculas e numeros criada com sucesso.","timestamp":"2024-09-24T16:50:07.575Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jessica","timestamp":"2024-09-24T16:50:08.224Z"}
+{"level":"info","message":"Senha criada: qvno4ozd3bxfbnk3rdpl3dfyc1ugteucykr7eji52n","timestamp":"2024-09-24T16:50:08.226Z"}
+{"level":"info","message":"Validando senha gerada: qvno4ozd3bxfbnk3rdpl3dfyc1ugteucykr7eji52n","timestamp":"2024-09-24T16:50:08.226Z"}
+{"level":"info","message":"Senha criada: I0H8S44MJQW4FBXCL3GWAQC6A1MGQE8JWXQNINJCVT","timestamp":"2024-09-24T16:50:08.227Z"}
+{"level":"info","message":"Validando senha gerada: I0H8S44MJQW4FBXCL3GWAQC6A1MGQE8JWXQNINJCVT","timestamp":"2024-09-24T16:50:08.227Z"}
+{"level":"info","message":"Senha criada: ASvWqzTcaEhDIYCprxvNvwmVNQjwwHvWAroojpWxSK","timestamp":"2024-09-24T16:50:08.227Z"}
+{"level":"info","message":"Validando senha gerada: ASvWqzTcaEhDIYCprxvNvwmVNQjwwHvWAroojpWxSK","timestamp":"2024-09-24T16:50:08.228Z"}
+{"level":"info","message":"Senha criada: 8Ldv668j1cn67OW44i4k8rJ9W6969n9dMF70B4a59W","timestamp":"2024-09-24T16:50:08.228Z"}
+{"level":"info","message":"Validando senha gerada: 8Ldv668j1cn67OW44i4k8rJ9W6969n9dMF70B4a59W","timestamp":"2024-09-24T16:50:08.229Z"}
+{"level":"info","message":"Gerando senha do tipo: minusculas e numeros","timestamp":"2024-09-24T16:50:08.229Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:08.231Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:08.232Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:08.235Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:08.237Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:08.238Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:08.248Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:08.249Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:08.253Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:08.254Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: qvno4ozd3bxfbnk3rdpl3dfyc1ugteucykr7eji52n","timestamp":"2024-09-24T16:50:08.260Z"}
+{"level":"info","message":"Senha com letras minúsculas e números criada com sucesso.","timestamp":"2024-09-24T16:50:08.260Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:08.261Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: ASvWqzTcaEhDIYCprxvNvwmVNQjwwHvWAroojpWxSK","timestamp":"2024-09-24T16:50:08.261Z"}
+{"level":"info","message":"Senha com letras maiúsculas e minúsculas criada com sucesso.","timestamp":"2024-09-24T16:50:08.261Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:08.262Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: I0H8S44MJQW4FBXCL3GWAQC6A1MGQE8JWXQNINJCVT","timestamp":"2024-09-24T16:50:08.262Z"}
+{"level":"info","message":"Senha com letras maiúsculas e números criada com sucesso.","timestamp":"2024-09-24T16:50:08.262Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:08.265Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: 8Ldv668j1cn67OW44i4k8rJ9W6969n9dMF70B4a59W","timestamp":"2024-09-24T16:50:08.266Z"}
+{"level":"info","message":"Senha com letras maiúsculas, minúsculas e numeros criada com sucesso.","timestamp":"2024-09-24T16:50:08.267Z"}
+{"level":"info","message":"Senha salva com sucesso: qvno4ozd3bxfbnk3rdpl3dfyc1ugteucykr7eji52n","timestamp":"2024-09-24T16:50:08.284Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-24T16:50:08.287Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:50:08 +0000] \"GET /password/alphanumeric/42/minusculas%20e%20numeros HTTP/1.1\" 200 99 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:08.289Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:50:10 +0000] \"OPTIONS /password/alphanumeric/17/minusculas%20e%20numeros HTTP/1.1\" 204 0 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:10.876Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jessica","timestamp":"2024-09-24T16:50:10.885Z"}
+{"level":"info","message":"Senha criada: vjnj8lepy4fn18nx0","timestamp":"2024-09-24T16:50:10.886Z"}
+{"level":"info","message":"Validando senha gerada: vjnj8lepy4fn18nx0","timestamp":"2024-09-24T16:50:10.887Z"}
+{"level":"info","message":"Senha criada: D60VVL5DVTPJP8715","timestamp":"2024-09-24T16:50:10.887Z"}
+{"level":"info","message":"Validando senha gerada: D60VVL5DVTPJP8715","timestamp":"2024-09-24T16:50:10.888Z"}
+{"level":"info","message":"Senha criada: fRqpCVFFNYblSaTXB","timestamp":"2024-09-24T16:50:10.888Z"}
+{"level":"info","message":"Validando senha gerada: fRqpCVFFNYblSaTXB","timestamp":"2024-09-24T16:50:10.890Z"}
+{"level":"info","message":"Senha criada: 83XYO48y4oIPqQRDv","timestamp":"2024-09-24T16:50:10.890Z"}
+{"level":"info","message":"Validando senha gerada: 83XYO48y4oIPqQRDv","timestamp":"2024-09-24T16:50:10.892Z"}
+{"level":"info","message":"Gerando senha do tipo: minusculas e numeros","timestamp":"2024-09-24T16:50:10.892Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:10.895Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:10.896Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:10.900Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:10.907Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:10.909Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:10.909Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:10.909Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:10.920Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:10.921Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: vjnj8lepy4fn18nx0","timestamp":"2024-09-24T16:50:10.921Z"}
+{"level":"info","message":"Senha com letras minúsculas e números criada com sucesso.","timestamp":"2024-09-24T16:50:10.922Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:10.922Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: D60VVL5DVTPJP8715","timestamp":"2024-09-24T16:50:10.923Z"}
+{"level":"info","message":"Senha com letras maiúsculas e números criada com sucesso.","timestamp":"2024-09-24T16:50:10.927Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:10.928Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: fRqpCVFFNYblSaTXB","timestamp":"2024-09-24T16:50:10.928Z"}
+{"level":"info","message":"Senha com letras maiúsculas e minúsculas criada com sucesso.","timestamp":"2024-09-24T16:50:10.928Z"}
+{"level":"info","message":"Senha salva com sucesso: vjnj8lepy4fn18nx0","timestamp":"2024-09-24T16:50:10.929Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-24T16:50:10.930Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:50:10 +0000] \"GET /password/alphanumeric/17/minusculas%20e%20numeros HTTP/1.1\" 200 74 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:10.931Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:10.936Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: 83XYO48y4oIPqQRDv","timestamp":"2024-09-24T16:50:10.936Z"}
+{"level":"info","message":"Senha com letras maiúsculas, minúsculas e numeros criada com sucesso.","timestamp":"2024-09-24T16:50:10.936Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jessica","timestamp":"2024-09-24T16:50:11.771Z"}
+{"level":"info","message":"Senha criada: 6h7bthfmgzra0jytc","timestamp":"2024-09-24T16:50:11.772Z"}
+{"level":"info","message":"Validando senha gerada: 6h7bthfmgzra0jytc","timestamp":"2024-09-24T16:50:11.772Z"}
+{"level":"info","message":"Senha criada: 7P1GGJEUMY5PASC01","timestamp":"2024-09-24T16:50:11.773Z"}
+{"level":"info","message":"Validando senha gerada: 7P1GGJEUMY5PASC01","timestamp":"2024-09-24T16:50:11.773Z"}
+{"level":"info","message":"Senha criada: HoEaUsDPvBIhutIvt","timestamp":"2024-09-24T16:50:11.773Z"}
+{"level":"info","message":"Validando senha gerada: HoEaUsDPvBIhutIvt","timestamp":"2024-09-24T16:50:11.773Z"}
+{"level":"info","message":"Senha criada: 96i1peN2787yJuQ3O","timestamp":"2024-09-24T16:50:11.773Z"}
+{"level":"info","message":"Validando senha gerada: 96i1peN2787yJuQ3O","timestamp":"2024-09-24T16:50:11.773Z"}
+{"level":"info","message":"Gerando senha do tipo: minusculas e numeros","timestamp":"2024-09-24T16:50:11.774Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:11.775Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:11.776Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:11.776Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:11.776Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:11.777Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:11.778Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:11.779Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:11.786Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:11.788Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: 6h7bthfmgzra0jytc","timestamp":"2024-09-24T16:50:11.788Z"}
+{"level":"info","message":"Senha com letras minúsculas e números criada com sucesso.","timestamp":"2024-09-24T16:50:11.788Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:11.789Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: HoEaUsDPvBIhutIvt","timestamp":"2024-09-24T16:50:11.789Z"}
+{"level":"info","message":"Senha com letras maiúsculas e minúsculas criada com sucesso.","timestamp":"2024-09-24T16:50:11.789Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:11.789Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: 7P1GGJEUMY5PASC01","timestamp":"2024-09-24T16:50:11.790Z"}
+{"level":"info","message":"Senha com letras maiúsculas e números criada com sucesso.","timestamp":"2024-09-24T16:50:11.790Z"}
+{"level":"info","message":"Senha salva com sucesso: 6h7bthfmgzra0jytc","timestamp":"2024-09-24T16:50:11.791Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-24T16:50:11.791Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:50:11 +0000] \"GET /password/alphanumeric/17/minusculas%20e%20numeros HTTP/1.1\" 200 74 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:11.792Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:11.796Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: 96i1peN2787yJuQ3O","timestamp":"2024-09-24T16:50:11.796Z"}
+{"level":"info","message":"Senha com letras maiúsculas, minúsculas e numeros criada com sucesso.","timestamp":"2024-09-24T16:50:11.796Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:50:33 +0000] \"OPTIONS /password/simple/10/minusculas HTTP/1.1\" 204 0 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:33.020Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jessica","timestamp":"2024-09-24T16:50:33.025Z"}
+{"level":"info","message":"Senha criada: ejouoiikmo","timestamp":"2024-09-24T16:50:33.027Z"}
+{"level":"info","message":"Validando senha gerada: ejouoiikmo","timestamp":"2024-09-24T16:50:33.027Z"}
+{"level":"info","message":"Senha criada: fkhtcoyuca","timestamp":"2024-09-24T16:50:33.029Z"}
+{"level":"info","message":"Validando senha gerada: fkhtcoyuca","timestamp":"2024-09-24T16:50:33.030Z"}
+{"level":"info","message":"Senha criada: 6404645808","timestamp":"2024-09-24T16:50:33.032Z"}
+{"level":"info","message":"Validando senha gerada: 6404645808","timestamp":"2024-09-24T16:50:33.035Z"}
+{"level":"info","message":"Gerando senha do tipo: minusculas","timestamp":"2024-09-24T16:50:33.037Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:33.271Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:33.271Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:33.300Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: fkhtcoyuca","timestamp":"2024-09-24T16:50:33.301Z"}
+{"level":"info","message":"Senha com letras maiúsculas criada com sucesso.","timestamp":"2024-09-24T16:50:33.301Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:33.459Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:33.460Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:33.471Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: ejouoiikmo","timestamp":"2024-09-24T16:50:33.472Z"}
+{"level":"info","message":"Senha com letras minúsculas criada com sucesso.","timestamp":"2024-09-24T16:50:33.472Z"}
+{"level":"info","message":"Senha salva com sucesso: ejouoiikmo","timestamp":"2024-09-24T16:50:33.475Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-24T16:50:33.475Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:50:33 +0000] \"GET /password/simple/10/minusculas HTTP/1.1\" 200 57 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:33.478Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:33.637Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:33.637Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:33.645Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: 6404645808","timestamp":"2024-09-24T16:50:33.645Z"}
+{"level":"info","message":"Senha com numeros criada com sucesso.","timestamp":"2024-09-24T16:50:33.646Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jessica","timestamp":"2024-09-24T16:50:34.291Z"}
+{"level":"info","message":"Senha criada: uvairfdcss","timestamp":"2024-09-24T16:50:34.292Z"}
+{"level":"info","message":"Validando senha gerada: uvairfdcss","timestamp":"2024-09-24T16:50:34.293Z"}
+{"level":"info","message":"Senha criada: rxhpdlcqhv","timestamp":"2024-09-24T16:50:34.293Z"}
+{"level":"info","message":"Validando senha gerada: rxhpdlcqhv","timestamp":"2024-09-24T16:50:34.294Z"}
+{"level":"info","message":"Senha criada: 4606500868","timestamp":"2024-09-24T16:50:34.294Z"}
+{"level":"info","message":"Validando senha gerada: 4606500868","timestamp":"2024-09-24T16:50:34.294Z"}
+{"level":"info","message":"Gerando senha do tipo: minusculas","timestamp":"2024-09-24T16:50:34.295Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:34.296Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:34.297Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:34.301Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:34.320Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:34.329Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:34.337Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:34.346Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: uvairfdcss","timestamp":"2024-09-24T16:50:34.347Z"}
+{"level":"info","message":"Senha com letras minúsculas criada com sucesso.","timestamp":"2024-09-24T16:50:34.358Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:34.362Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: rxhpdlcqhv","timestamp":"2024-09-24T16:50:34.362Z"}
+{"level":"info","message":"Senha com letras maiúsculas criada com sucesso.","timestamp":"2024-09-24T16:50:34.363Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:34.367Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: 4606500868","timestamp":"2024-09-24T16:50:34.368Z"}
+{"level":"info","message":"Senha com numeros criada com sucesso.","timestamp":"2024-09-24T16:50:34.369Z"}
+{"level":"info","message":"Senha salva com sucesso: uvairfdcss","timestamp":"2024-09-24T16:50:34.371Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-24T16:50:34.372Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:50:34 +0000] \"GET /password/simple/10/minusculas HTTP/1.1\" 200 57 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:34.373Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jessica","timestamp":"2024-09-24T16:50:35.311Z"}
+{"level":"info","message":"Senha criada: ecrpikataq","timestamp":"2024-09-24T16:50:35.473Z"}
+{"level":"info","message":"Validando senha gerada: ecrpikataq","timestamp":"2024-09-24T16:50:35.473Z"}
+{"level":"info","message":"Senha criada: fsjpjunuqu","timestamp":"2024-09-24T16:50:35.474Z"}
+{"level":"info","message":"Validando senha gerada: fsjpjunuqu","timestamp":"2024-09-24T16:50:35.474Z"}
+{"level":"info","message":"Senha criada: 5042435155","timestamp":"2024-09-24T16:50:35.475Z"}
+{"level":"info","message":"Validando senha gerada: 5042435155","timestamp":"2024-09-24T16:50:35.476Z"}
+{"level":"info","message":"Gerando senha do tipo: minusculas","timestamp":"2024-09-24T16:50:35.476Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:35.478Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:35.478Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:35.479Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:35.480Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:35.481Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:35.483Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:35.490Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: ecrpikataq","timestamp":"2024-09-24T16:50:35.490Z"}
+{"level":"info","message":"Senha com letras minúsculas criada com sucesso.","timestamp":"2024-09-24T16:50:35.490Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:35.491Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: fsjpjunuqu","timestamp":"2024-09-24T16:50:35.492Z"}
+{"level":"info","message":"Senha com letras maiúsculas criada com sucesso.","timestamp":"2024-09-24T16:50:35.492Z"}
+{"level":"info","message":"Senha salva com sucesso: ecrpikataq","timestamp":"2024-09-24T16:50:35.493Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-24T16:50:35.493Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:50:35 +0000] \"GET /password/simple/10/minusculas HTTP/1.1\" 200 57 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:35.496Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:35.497Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: 5042435155","timestamp":"2024-09-24T16:50:35.497Z"}
+{"level":"info","message":"Senha com numeros criada com sucesso.","timestamp":"2024-09-24T16:50:35.497Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:50:43 +0000] \"OPTIONS /password/complex/10/minusculas%20maiusculas%20numeros%20e%20caracteres%20especiais HTTP/1.1\" 204 0 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:43.304Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jessica","timestamp":"2024-09-24T16:50:43.332Z"}
+{"level":"info","message":"Senha criada: U\">6Oy<+*m","timestamp":"2024-09-24T16:50:43.334Z"}
+{"level":"info","message":"Validando senha gerada: U\">6Oy<+*m","timestamp":"2024-09-24T16:50:43.334Z"}
+{"level":"info","message":"Gerando senha do tipo: minusculas maiusculas numeros e caracteres especiais","timestamp":"2024-09-24T16:50:43.335Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:43.338Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:43.338Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:43.353Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: U\">6Oy<+*m","timestamp":"2024-09-24T16:50:43.358Z"}
+{"level":"info","message":"Senha complexa criada com sucesso.","timestamp":"2024-09-24T16:50:43.363Z"}
+{"level":"info","message":"Senha salva com sucesso: U\">6Oy<+*m","timestamp":"2024-09-24T16:50:43.370Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-24T16:50:43.371Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:50:43 +0000] \"GET /password/complex/10/minusculas%20maiusculas%20numeros%20e%20caracteres%20especiais HTTP/1.1\" 200 100 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:43.373Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jessica","timestamp":"2024-09-24T16:50:44.095Z"}
+{"level":"info","message":"Senha criada: JbZtf-enAH","timestamp":"2024-09-24T16:50:44.096Z"}
+{"level":"info","message":"Validando senha gerada: JbZtf-enAH","timestamp":"2024-09-24T16:50:44.097Z"}
+{"level":"info","message":"Gerando senha do tipo: minusculas maiusculas numeros e caracteres especiais","timestamp":"2024-09-24T16:50:44.101Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:44.102Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:44.103Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:44.110Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: JbZtf-enAH","timestamp":"2024-09-24T16:50:44.111Z"}
+{"level":"info","message":"Senha complexa criada com sucesso.","timestamp":"2024-09-24T16:50:44.111Z"}
+{"level":"info","message":"Senha salva com sucesso: JbZtf-enAH","timestamp":"2024-09-24T16:50:44.113Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-24T16:50:44.113Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:50:44 +0000] \"GET /password/complex/10/minusculas%20maiusculas%20numeros%20e%20caracteres%20especiais HTTP/1.1\" 200 99 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:44.116Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jessica","timestamp":"2024-09-24T16:50:44.892Z"}
+{"level":"info","message":"Senha criada: MPJ:dCgYKz","timestamp":"2024-09-24T16:50:44.893Z"}
+{"level":"info","message":"Validando senha gerada: MPJ:dCgYKz","timestamp":"2024-09-24T16:50:44.894Z"}
+{"level":"info","message":"Gerando senha do tipo: minusculas maiusculas numeros e caracteres especiais","timestamp":"2024-09-24T16:50:44.894Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:44.896Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:44.896Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:44.908Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: MPJ:dCgYKz","timestamp":"2024-09-24T16:50:44.909Z"}
+{"level":"info","message":"Senha complexa criada com sucesso.","timestamp":"2024-09-24T16:50:44.909Z"}
+{"level":"info","message":"Senha salva com sucesso: MPJ:dCgYKz","timestamp":"2024-09-24T16:50:44.922Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-24T16:50:44.923Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:50:44 +0000] \"GET /password/complex/10/minusculas%20maiusculas%20numeros%20e%20caracteres%20especiais HTTP/1.1\" 200 99 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:44.924Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jessica","timestamp":"2024-09-24T16:50:45.795Z"}
+{"level":"info","message":"Senha criada: {|hm0h;~FD","timestamp":"2024-09-24T16:50:45.796Z"}
+{"level":"info","message":"Validando senha gerada: {|hm0h;~FD","timestamp":"2024-09-24T16:50:45.797Z"}
+{"level":"info","message":"Gerando senha do tipo: minusculas maiusculas numeros e caracteres especiais","timestamp":"2024-09-24T16:50:45.798Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:45.800Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:45.801Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:45.815Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: {|hm0h;~FD","timestamp":"2024-09-24T16:50:45.816Z"}
+{"level":"info","message":"Senha complexa criada com sucesso.","timestamp":"2024-09-24T16:50:45.816Z"}
+{"level":"info","message":"Senha salva com sucesso: {|hm0h;~FD","timestamp":"2024-09-24T16:50:45.825Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-24T16:50:45.826Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:50:45 +0000] \"GET /password/complex/10/minusculas%20maiusculas%20numeros%20e%20caracteres%20especiais HTTP/1.1\" 200 99 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:45.831Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jessica","timestamp":"2024-09-24T16:50:47.042Z"}
+{"level":"info","message":"Senha criada: E'H$oK$z/%","timestamp":"2024-09-24T16:50:47.043Z"}
+{"level":"info","message":"Validando senha gerada: E'H$oK$z/%","timestamp":"2024-09-24T16:50:47.043Z"}
+{"level":"info","message":"Gerando senha do tipo: minusculas maiusculas numeros e caracteres especiais","timestamp":"2024-09-24T16:50:47.044Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:47.048Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:47.050Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:47.062Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: E'H$oK$z/%","timestamp":"2024-09-24T16:50:47.063Z"}
+{"level":"info","message":"Senha complexa criada com sucesso.","timestamp":"2024-09-24T16:50:47.064Z"}
+{"level":"info","message":"Senha salva com sucesso: E'H$oK$z/%","timestamp":"2024-09-24T16:50:47.085Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-24T16:50:47.086Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:50:47 +0000] \"GET /password/complex/10/minusculas%20maiusculas%20numeros%20e%20caracteres%20especiais HTTP/1.1\" 200 99 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:47.088Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:50:50 +0000] \"OPTIONS /password/complex/10/minusculas%20maiusculas%20numeros%20e%20caracteres%20especiais HTTP/1.1\" 204 0 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:50.667Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jessica","timestamp":"2024-09-24T16:50:50.672Z"}
+{"level":"info","message":"Senha criada: grMF33\\|wA","timestamp":"2024-09-24T16:50:50.673Z"}
+{"level":"info","message":"Validando senha gerada: grMF33\\|wA","timestamp":"2024-09-24T16:50:50.676Z"}
+{"level":"info","message":"Gerando senha do tipo: minusculas maiusculas numeros e caracteres especiais","timestamp":"2024-09-24T16:50:50.677Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:50.680Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:50.683Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:50.695Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: grMF33\\|wA","timestamp":"2024-09-24T16:50:50.710Z"}
+{"level":"info","message":"Senha complexa criada com sucesso.","timestamp":"2024-09-24T16:50:50.711Z"}
+{"level":"info","message":"Senha salva com sucesso: grMF33\\|wA","timestamp":"2024-09-24T16:50:50.712Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-24T16:50:50.713Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:50:50 +0000] \"GET /password/complex/10/minusculas%20maiusculas%20numeros%20e%20caracteres%20especiais HTTP/1.1\" 200 100 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:50.714Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jessica","timestamp":"2024-09-24T16:50:51.927Z"}
+{"level":"info","message":"Senha criada: ;VugI%CR)7","timestamp":"2024-09-24T16:50:51.928Z"}
+{"level":"info","message":"Validando senha gerada: ;VugI%CR)7","timestamp":"2024-09-24T16:50:51.928Z"}
+{"level":"info","message":"Gerando senha do tipo: minusculas maiusculas numeros e caracteres especiais","timestamp":"2024-09-24T16:50:51.928Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:51.933Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:51.934Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:51.944Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: ;VugI%CR)7","timestamp":"2024-09-24T16:50:51.944Z"}
+{"level":"info","message":"Senha complexa criada com sucesso.","timestamp":"2024-09-24T16:50:51.945Z"}
+{"level":"info","message":"Senha salva com sucesso: ;VugI%CR)7","timestamp":"2024-09-24T16:50:51.948Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-24T16:50:51.949Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:50:51 +0000] \"GET /password/complex/10/minusculas%20maiusculas%20numeros%20e%20caracteres%20especiais HTTP/1.1\" 200 99 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:51.950Z"}
+{"level":"info","message":"Autenticação bem-sucedida para o usuário: jessica","timestamp":"2024-09-24T16:50:52.977Z"}
+{"level":"info","message":"Senha criada: ASM268[(MX","timestamp":"2024-09-24T16:50:52.978Z"}
+{"level":"info","message":"Validando senha gerada: ASM268[(MX","timestamp":"2024-09-24T16:50:52.978Z"}
+{"level":"info","message":"Gerando senha do tipo: minusculas maiusculas numeros e caracteres especiais","timestamp":"2024-09-24T16:50:52.979Z"}
+{"level":"info","message":"Senha não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:52.982Z"}
+{"level":"info","message":"Cache miss para senha.","timestamp":"2024-09-24T16:50:52.983Z"}
+{"level":"info","message":"Senha comum não encontrada no banco de dados.","timestamp":"2024-09-24T16:50:52.991Z"}
+{"level":"info","message":"Senha válida gerada com sucesso: ASM268[(MX","timestamp":"2024-09-24T16:50:52.992Z"}
+{"level":"info","message":"Senha complexa criada com sucesso.","timestamp":"2024-09-24T16:50:52.992Z"}
+{"level":"info","message":"Senha salva com sucesso: ASM268[(MX","timestamp":"2024-09-24T16:50:52.994Z"}
+{"level":"info","message":"Senha gerada e salva com sucesso","timestamp":"2024-09-24T16:50:52.994Z"}
+{"level":"info","message":"::1 - - [24/Sep/2024:16:50:52 +0000] \"GET /password/complex/10/minusculas%20maiusculas%20numeros%20e%20caracteres%20especiais HTTP/1.1\" 200 99 \"http://localhost:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"","timestamp":"2024-09-24T16:50:52.996Z"}
