@@ -36,7 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
   //Logica para remover o input de senha personalizada
   selectTipoSenha.addEventListener('change', () => {
     const textOptionSelect = selectTipoSenha.value;
-    if (textOptionSelect !== 'personalized') {
+    if (textOptionSelect
+      !== 'personalized') {
       hiddeInputPasswordPersonalized();
     }
     fillSelectOptions(textOptionSelect);
@@ -74,10 +75,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const typeSenha = document.getElementById('tipo-senha').value
 
         if (typeSenha === 'personalized') {
-          const caracteres = document.getElementById('input-password-personalized').value;
-          console.log(caracteres);
+          const caracteres = String(document.getElementById('input-password-personalized').value);
+          if (!caracteres || caracteres.trim() === '' || caracteres.length < 3) {
+            alert('Os caracteres personalizados devem ser acima de 3');
+            throw new Error('Os caracteres não podem esta vazios');
+          }
+
           const length = document.getElementById('input-range').value;
-          senhaCriada = await createPasswordPersonalized(length, token, caracteres);
+          senhaCriada = await createPasswordPersonalized(length, token, caracteres.trim());
         } else {
           senhaCriada = await createPassword({
             type: document.getElementById('tipo-senha').value,
@@ -87,6 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (senhaCriada.error) {
+          alert(`Erro ao tentar criar senha: ${error.message}`);
           throw new Error(`Erro na requisição: ${error}`);
         }
 
@@ -95,6 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
         showOption('Faça login', '.groupOption-login');
       }
     } catch (error) {
+      alert(`Erro ao tentar criar senha: ${error.message}`)
       throw new Error(`Erro na requisição: ${error}`);
     }
   });
@@ -206,9 +213,11 @@ function handleApiError(status, errorMessage) {
       getElement('.nav__list-menu__item--login').style.display = 'list-item';
       showOption('Faça login novamente', '.groupOption-login');
     } else {
+      alert('Acesso negado. Você não está autorizado a realizar essa ação.');
       throw new Error('Acesso negado. Você não está autorizado a realizar essa ação.');
     }
   } else {
+    alert(`Ocorreu um erro: ${errorMessage}`);
     throw new Error('Ocorreu um erro: ' + errorMessage);
   }
 }
@@ -272,10 +281,16 @@ function eventSeePassword(elements) {
         input.classList.remove('hidden');
         input.classList.add('visible');
         input.setAttribute('type', 'text');
+        const icone = getElement(classBtn).querySelector('i');
+        icone.classList.remove('bi-eye-slash');
+        icone.classList.add('bi-eye');
       } else {
         input.classList.remove('visible');
         input.classList.add('hidden');
         input.setAttribute('type', 'password');
+        const icone = getElement(classBtn).querySelector('i');
+        icone.classList.remove('bi-eye');
+        icone.classList.add('bi-eye-slash');
       }
     });
   });
@@ -290,6 +305,7 @@ function validateData(username, password, classElement) {
     throw new Error('Credenciais do usuário inválidas')
   }
 }
+
 
 //função responsável por escrever mensagem nos status do usuario login
 function statusUser(text, color, classElement) {
@@ -322,6 +338,7 @@ async function createPassword(objectSenha, token) {
     const data = await response.json();
     return data;
   } catch (error) {
+    alert(`Erro na requisição: ${error.message}`);
     throw new Error('Erro na requisição');
   }
 }
@@ -348,6 +365,7 @@ async function createPasswordPersonalized(length, token, characters) {
     const data = await response.json();
     return data;
   } catch (error) {
+    alert(`Erro na requisição: ${error.message}`);
     throw new Error('Erro na requisição');
   }
 }
@@ -442,6 +460,8 @@ function createInputPasswordPersonalized() {
     inputText.setAttribute('type', 'text');
     inputText.setAttribute('id', 'input-password-personalized');
     inputText.setAttribute('placeholder', 'Caracteres desejados na senha');
+    inputText.setAttribute('min', '3');
+    inputText.setAttribute('required', 'required');
     inputText.classList.add(('input-personalized'));
     document.getElementById('tipo-caracteres-senha').style.display = 'none';
     getElement('.group-selects__group--personalized').appendChild(inputText);
